@@ -16,6 +16,23 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		num: -1,
 		gen: 4,
 	},
+	frozenorb: {
+		name: "Frozen Orb",
+		spritenum: 515,
+		fling: {
+			basePower: 30,
+			status: 'frz',
+		},
+		onResidualOrder: 26,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('frz', pokemon);
+		},
+		desc: "At the end of each turn, tries to freeze the holder.",
+		shortDesc: "Tries to freeze the holder.",
+		num: -1,
+		gen: 4,
+	},
 	relicsheet: {
 		name: "Relic Sheet",
 		spritenum: 390,

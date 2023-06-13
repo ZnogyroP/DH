@@ -55,11 +55,15 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onModifyDefPriority: 4,
 		onModifyDef(def, pokemon){
-			return this.chainModify(0.67);
+			if (!pokemon.hasAbility('marvelscale')) {
+				return this.chainModify(0.67);
+			}
 		},
 		onModifySpDPriority: 4,
 		onModifySpD(spd, pokemon){
-			return this.chainModify(0.67);
+			if (!pokemon.hasAbility('marvelscale')) {
+				return this.chainModify(0.67);
+			}
 		},
 		onHit(target, source, move) {
 			if (move.thawsTarget || move.type === 'Fire' && move.category !== 'Status') {

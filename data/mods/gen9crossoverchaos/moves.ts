@@ -24,33 +24,19 @@ sound: Has no effect on Pokemon with the Soundproof Ability.
 */
 
 export const Moves: {[k: string]: ModdedMoveData} = {
-
 	dededehammerthrow: {
 		num: -1,
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
-		shortDesc: "Lowers user Attack by 1. Inflicts burns on contact with the user before it moves.",
+		shortDesc: "Lowers the user's Attack by 1.",
 		name: "Dedede Hammer Throw",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		beforeTurnCallback(pokemon) {
-			pokemon.addVolatile('dededehammerthrow');
-		},
-		condition: {
-			duration: 1,
-			onStart(pokemon) {
-				this.add('-singleturn', pokemon, 'move: Dedede Hammer Throw');
-			},
-			onHit(pokemon, source, move) {
-				if (move.flags['contact']) {
-					source.trySetStatus('brn', pokemon);
-				}
-			},
-		},
-		onAfterMove(pokemon) {
-			pokemon.removeVolatile('dededehammerthrow');
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Hammer Arm", target);
 		},
 		self: {
 			boosts: {
@@ -62,17 +48,43 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Flying",
 		contestType: "Tough",
 	},
-
+	electrohammer: {
+		accuracy: 90,
+		basePower: 100,
+		category: "Physical",
+		shortDesc: "Lowers the user's Speed by 1.",
+		name: "Electro Hammer",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Hammer Arm", target);
+		},
+		self: {
+			boosts: {
+				atk: -1,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Tough",
+	},
 	sheikahslate: {
 		num: -2,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		shortDesc: "20% chance to burn, freeze or paralyse the target.",
 		name: "Sheikah Slate",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Tri Attack", target);
+		},
 		secondary: {
 			chance: 20,
 			onHit(target, source) {
@@ -90,7 +102,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
-  
 	lightarrow: {
 		num: -3,
 		accuracy: 100,
@@ -104,8 +115,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Dark') return 1;
 		},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Spirit Shackle", target);
+		},
 		secondary: {
-      chance: 100,
+			chance: 100,
 			onHit(target, source, move) {
 				if (source.isActive) target.addVolatile('trapped', source, move, 'trapper');
 			},
@@ -114,7 +129,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Psychic",
 		contestType: "Beautiful",
 	},
-	
 	psyblast: {
 		num: -4,
 		accuracy: 100,
@@ -143,12 +157,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				this.runEvent('AfterUseItem', pokemon, null, null, item);
 			}
 		},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Psystrike", target);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
 	},
-	
 	puyopop: {
 		num: -5,
 		accuracy: 90,
@@ -172,6 +189,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				}
 			}
 		},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Water Shuriken", target);
+		},
 		multihit: 4,
 		multiaccuracy: true,
 		secondary: null,
@@ -180,7 +201,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		zMovePower: 180,
 		contestType: "Cute",
 	},
-	
 	dracoburning: {
 		num: -6,
 		accuracy: 90,
@@ -191,12 +211,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Fire Blast", target);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
 	},
-	
 	frostkick: {
 		num: -7,
 		accuracy: 90,
@@ -212,11 +235,14 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			chance: 10,
 			status: 'frz',
 		},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Ice Hammer", target);
+		},
 		target: "normal",
 		type: "Ice",
 		contestType: "Cool",
 	},
-	
 	shockkick: {
 		num: -8,
 		accuracy: 90,
@@ -228,6 +254,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		critRatio: 2,
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Thunderous Kick", target);
+		},
 		secondary: {
 			chance: 10,
 			status: 'par',
@@ -236,7 +266,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
-	
 	greatfire: {
 		num: -9,
 		accuracy: true,
@@ -246,6 +275,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Inferno Overdrive", target);
+		},
 		useSourceAlternateDefensiveAsOffensive: true,
 		isZ: "dracocentauriumz",
 		secondary: null,
@@ -253,9 +286,72 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
+	jumbobarrel: {
+		num: -10,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		shortDesc: "30% chance to raise the user's Attack by 1. ",
+		name: "Jumbo Barrel",
+		pp: 15,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Aeroblast", target);
+		},
+		secondary: {
+			chance: 30,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Flying",
+		contestType: "Cool",
+	},
+	precisionstrikes: {
+		num: -11,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		shortDesc: "Heals 40% of the damage dealt.",
+		name: "Precision Strikes",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, slicing: 1, heal: 1, protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Slash", target);
+		},
+		drain: [4, 10],
+		target: "normal",
+		type: "Fighting",
+		contestType: "Cool",
+	},
+	rudebuster: {
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		defensiveCategory: "Special",
+		shortDesc: "Damages target based on Sp. Def, not Defense.",
+		name: "rudebuster",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+ 		onPrepareHit: function(target, source, move) {
+		  this.attrLastMove('[still]');
+		  this.add('-anim', source, "Punishment", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Beautiful",
+	},
 	
 	// Below are vanilla moves altered by custom interractions
-	
 	bounce: {
 		num: 340,
 		accuracy: 85,
@@ -298,7 +394,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Flying",
 		contestType: "Cute",
 	},
-	
 	fly: {
 		num: 19,
 		accuracy: 95,
@@ -338,7 +433,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Flying",
 		contestType: "Clever",
 	},
-	
 	skydrop: {
 		num: 507,
 		accuracy: 100,

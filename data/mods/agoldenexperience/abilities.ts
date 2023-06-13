@@ -3,6 +3,7 @@ import { consoleips } from "../../../config/config-example";
 const bladeMoves = ['aerialace','airslash', 'aircutter', 'behemothblade', 'crosspoison', 'cut', 'falseswipe', 'furycutter', 'leafblade', 'nightslash', 'psychocut', 'razorshell', 'razorwind','sacredsword', 'secretsword', 'slash', 'xscissor', 'solarblade', 'ceaselessedge', 'sneakyassault', 'braveblade', 'bitterblade'];
 const kickMoves = ['jumpkick', 'highjumpkick', 'megakick', 'doublekick', 'blazekick', 'tropkick', 'lowkick', 'lowsweep', 'rollingkick', 'triplekick', 'stomp', 'highhorsepower', 'tripleaxel', 'stompingtantrum', 'thunderouskick', 'axekick'];
 const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'irontail', 'dragontail', 'poisontail', 'aquatail', 'vinewhip', 'wringout',];
+const windMoves = ['aircutter', 'blizzard', 'fairywind', 'gust', 'heatwave', 'hurricane', 'icywind', 'petalblizzard', 'sandstorm', 'tailwind', 'twister', 'whirlwind'];
 
 export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 	poisonousradula: {
@@ -2497,7 +2498,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		shortDesc: "Boosts the power of sword, cut, slash, and blade moves by 1.3x",
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (bladeMoves.includes(move.id)) {
+			if (move.flags['slicing'] || bladeMoves.includes(move.id)) { 
 				return this.chainModify(1.3);
 			}
 		},
@@ -2877,7 +2878,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 	windpower: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
-			if (move.flags['wind']) {
+			if (move.flags['wind'] || windMoves.includes(move.id)) {
 				target.addVolatile('charge');
 			}
 		},
@@ -2899,7 +2900,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 			}
 		},
 		onTryHit(target, source, move) {
-			if (target !== source && move.flags['wind']) {
+			if (target !== source && (move.flags['wind'] || windMoves.includes(move.id))) {
 				if (!this.boost({atk: 1}, target, target)) {
 					this.add('-immune', target, '[from] ability: Wind Rider');
 				}
@@ -2915,7 +2916,6 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		name: "Wind Rider",
 		shortDesc: "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
 		rating: 3.5,
-		// We do not want Brambleghast to get Infiltrator in Randbats
 		num: 274,
 	},
 };

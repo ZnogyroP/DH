@@ -71,7 +71,20 @@ export const Formats: FormatList = [
 			}
 		},
 	},
-	
+	{
+		name: "[Gen 8] Banhammers Cycle 2",
+		desc: `<b>Banhammers</b>: A metagame where players are allowed to ban Pokemon, Moves, Items, and Abilities through earning points in room tournaments.`,
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/banhammers-cycle-2-week-2-second-roomtour-6-17.3711488/">Banhammers on Smogon Forums</a>`,
+         `&bullet; <a href="https://docs.google.com/spreadsheets/d/1prtFrCj_mdOpFtKPpsCH6S3CsO12tEgTIWaQJOEnUcY/edit?usp=sharing">Spreadsheet</a>`,			
+		],
+		mod: 'banhammers',
+		ruleset: ['Standard', 'Dynamax Clause', 'Data Mod'],
+		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Sand Veil', 'Shadow Tag', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Last Respects', 'Shed Tail',
+					 'Kingambit', 'Tornadus-Therian', 'Sneasler', 'Ting-Lu', 'Corviknight', 'Ursaluna', 'Gholdengo', 'Enamorus-Base',
+					 'Kleavor', 'Dragapult', 'Rapid Spin', 'Defog', 'Salt Cure', 'Spikes', 'Ceaseless Edge', 'U-Turn', 'Heavy-Duty Boots',
+					 'Booster Energy', 'Choice Scarf', 'Choice Specs', 'Drought', 'Regenerator', 'Levitate', 'Purifying Salt'],
+    },	
 	{
         name: "[Gen 8] Gen 9 Blindsided",
         desc: `<b>[Gen 9] Blindsided</b>: the monkey has awoken`,
@@ -79,9 +92,9 @@ export const Formats: FormatList = [
             `&bullet; <a href="https://docs.google.com/spreadsheets/d/1263L6g2BPzf4eQQNfqJrp2FO1UMtGdxWXcyfz9OBqkM/edit#gid=1545907772">spreadsheet</a>`,
         ],
         mod: 'g9blindsided',
-        ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'Z-Move Clause', 'Data Mod', 'Mega Data Mod'],
+        ruleset: ['Standard', 'Data Mod', 'Mega Data Mod'],
         banlist: [
-            'Arena Trap', 'Moody', 'Shadow Tag', 'Baton Pass', 'Shed Tail', 'Last Respects'
+            'Shed Tail', 'Last Respects'
         ],
         onValidateTeam(team, format) {
             let speciesTable = {};
@@ -192,9 +205,9 @@ export const Formats: FormatList = [
 					if (attackOrder >= 0) {
 						set.moves[attackOrder] = 'gigatonhammer';
 					}
-					let defendOrder = set.moves.indexOf('defendorder');
-					if (defendOrder >= 0) {
-						set.moves[defendOrder] = 'thundercage';
+					let beatup = set.moves.indexOf('beatup');
+					if (beatup >= 0) {
+						set.moves[beatup] = 'electrohammer';
 					}
 				} 
 				else {
@@ -205,7 +218,7 @@ export const Formats: FormatList = [
 		onValidateTeam(team, format) {
 			/**@type {{[k: string]: true}}*/
 			let speciesTable = {};
-			let allowedTiers = ['CC OU', 'CC Ubers'];
+			let allowedTiers = ['CC OU', 'CC UU', 'CC Ubers'];
 			for (const set of team) {
 				let template = this.dex.getSpecies(set.species);
 				if (!allowedTiers.includes(template.tier)) {
@@ -506,6 +519,28 @@ export const Formats: FormatList = [
 			}
 		},
 		mod: 'smashstereotypes',
+	},
+	{
+		name: "[Gen 9] Triple Threat",
+		desc: [
+			"<b>Triple Threat</b>: A micrometa where Pokemon are allowed to have up to three types.",
+		],
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/triple-threat-slate-2-dragon-fairy-steel.3722322">Triple Threat on Smogon Forums</a>`,
+		      ],
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'Z-Move Clause', 'Data Mod', 'Mega Data Mod'],
+		banlist: [],
+		onValidateTeam(team, format) {
+			/**@type {{[k: string]: true}} */
+			let speciesTable = {};
+			for (const set of team) {
+				let template = this.dex.getSpecies(set.species);
+				if ( template.tier !== 'TT') {
+					return [set.species + ' is not usable in Triple Threat.'];
+				}
+			}
+		},
+		mod: 'triplethreat',
 	},
 	{
 		section: "Gen 8 Mods",

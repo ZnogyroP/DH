@@ -1,0 +1,30 @@
+export const Pokedex: {[speciesid: string]: SpeciesData} = {
+	roserade: {
+		num: 407,
+		species: "Roserade",
+		types: ["Grass", "Dark", "Fairy"],
+		baseStats: {hp: 70, atk: 70, def: 75, spa: 115, spd: 105, spe: 90},
+		abilities: {0: "Natural Cure", 1: "Immunity", H: "Grassy Surge"},
+		heightm: 0.9,
+		weightkg: 14.5,
+	},
+	darmanitanzen: {
+		num: 555,
+		name: "Darmanitan-Zen",
+		//baseSpecies: "Darmanitan",
+		//forme: "Zen",
+		types: ["Fire", "Psychic", "Fighting"],
+		baseStats: {hp: 105, atk: 55, def: 105, spa: 140, spd: 105, spe: 30},
+		abilities: {0: "Inner Focus", H: "Solid Rock"},
+		heightm: 1.3,
+		weightkg: 92.9,
+	},
+	hammerhelm: {
+		num: -1,
+		species: "Hammerhelm",
+		types: ["Water", "Fighting", "Steel"],
+		baseStats: {hp: 80, atk: 130, def: 120, spa: 65, spd: 60, spe: 50},
+		abilities: {0: "Heavy Metal", 1: "Iron Fist", H: "Flash Fire"},
+		weightkg: 200,
+	},
+};

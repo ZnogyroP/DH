@@ -7,11 +7,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 			return true;
 		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'flinch') return null;
+		},
 		forcedForme: "Masked Dedede",
 		itemUser: ["Masked Dedede"],
 		num: -1,
 		gen: 9,
-		desc: "If held by King Dedede, this item changes its forme to Masked Dedede.", 
+		desc: "If held by King Dedede, this item changes its forme to Masked Dedede. Holder is immune to flinching.", 
 	},
 	dracocentauriumz: {
 		name: "Dracocentaurium Z",

@@ -121,6 +121,10 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
         addNewMoves('medicham', ['axekick']);
         addNewMoves('girafarig', ['twinbeam']);
         addNewMoves('chesnaught', ['bodypress']);
+        addNewMoves('uxie', ['agility', 'mysticalpower']);
+        addNewMoves('azelf', ['agility', 'mysticalpower']);
+        addNewMoves('mesprit', ['agility', 'mysticalpower']);
+        addNewMoves('cresselia', ['agility', 'lunarblessing']);
         
         addNewMoves('electivire', ['doubleshock']);
         addNewMoves('luxray', ['doubleshock']);

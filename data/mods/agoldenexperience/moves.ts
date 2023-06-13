@@ -2264,25 +2264,41 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Ground",
 		contestType: "Tough",
 	},
+	// wavecrash: {
+	// 	num: -1710,
+	// 	accuracy: 100,
+	// 	basePower: 75,
+	// 	category: "Physical",
+	// 	name: "Wave Crash",
+	// 	shortDesc: "Has 33% recoil. 100% chance to raise the user's Speed by 1.",
+	// 	pp: 10,
+	// 	priority: 0,
+	// 	flags: {contact: 1, protect: 1, mirror: 1},
+	// 	recoil: [1, 3],
+	// 	secondary: {
+	// 		chance: 100,
+	// 		self: {
+	// 			boosts: {
+	// 				spe: 1,
+	// 			},
+	// 		},
+	// 	},
+	// 	target: "normal",
+	// 	type: "Water",
+	// 	contestType: "Cool",
+	// },
 	wavecrash: {
 		num: -1710,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
 		name: "Wave Crash",
-		shortDesc: "Has 33% recoil. 100% chance to raise the user's Speed by 1.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
 		pp: 10,
-		priority: 0,
+		priority: 1,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		recoil: [1, 3],
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: 1,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Water",
 		contestType: "Cool",
@@ -2332,6 +2348,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 90,
 		category: "Physical",
 		name: "Fissure",
+		desc: "10% chance to lower the target's Defense by 1.",
 		shortDesc: "10% chance to lower the target's Defense by 1.",
 		pp: 10,
 		priority: 0,
@@ -2352,6 +2369,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 150,
 		category: "Special",
 		name: "Sheer Cold",
+		desc: "Sets Hail and Aurora Veil. User faints after use.",
 		shortDesc: "Sets Hail and Aurora Veil. User faints after use.",
 		pp: 10,
 		priority: 0,
@@ -2369,9 +2387,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	guillotine: {
 		num: 12,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 90,
 		category: "Physical",
 		name: "Guillotine",
+		desc: "Raises user's Attack by 1 if this KOes the target.",
 		shortDesc: "Raises user's Attack by 1 if this KOes the target.",
 		pp: 10,
 		priority: 0,
@@ -2390,6 +2409,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 120,
 		category: "Physical",
 		name: "Horn Drill",
+		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
 		pp: 10,
 		priority: 0,
@@ -2927,7 +2947,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 75,
 		category: "Physical",
 		name: "Teramorphosis",
-		shortDesc: "Has 33% recoil. 50% chance to raise the user's Atk by 1.",
+		shortDesc: "Has 33% recoil. 50% chance to raise the user's Spe by 1.",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -2936,7 +2956,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			chance: 50,
 			self: {
 				boosts: {
-					atk: 1,
+					spe: 1,
 				},
 			},
 		},
@@ -2945,6 +2965,54 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		contestType: "Cool",
 	},
 	//Gen 9
+	mysticalpower: {
+		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
+		num: -1018,
+		accuracy: 90,
+		basePower: 70,
+		category: "Special",
+		name: "Mystical Power",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Stored Power", target);
+		},
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	lunarblessing: {
+		num: 849,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		shortDesc: "User and allies: healed 1/4 max HP, status cured.",
+		name: "Lunar Blessing",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit(pokemon) {
+			const success = !!this.heal(this.modify(pokemon.maxhp, 0.25));
+			return pokemon.cureStatus() || success;
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Lunar Dance", target);
+		},
+		secondary: null,
+		target: "allies",
+		type: "Psychic",
+	},
 	spicyextract: {
 		num: 858,
 		accuracy: true,
@@ -3316,6 +3384,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
+		shortDesc: "User's Electric type: typeless; must be Electric.",
 		name: "Double Shock",
 		pp: 5,
 		priority: 0,
@@ -3331,6 +3400,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				pokemon.setType(pokemon.getTypes(true).map(type => type === "Electric" ? "???" : type));
 				this.add('-start', pokemon, 'typechange', pokemon.getTypes().join('/'), '[from] move: Double Shock');
 			},
+		},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Bolt Strike", target);
 		},
 		secondary: null,
 		target: "normal",

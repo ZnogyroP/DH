@@ -894,7 +894,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	entei: {
 		inherit: true,
-		abilities: {0: "Pressure", H: "Ignite"},
+		abilities: {0: "Pressure", H: "Searing Touch"},
 	},
 	suicune: {
 		inherit: true,
@@ -2145,7 +2145,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	genesectchill: {
 		inherit: true,
 		baseStats: {hp: 81, atk: 140, def: 95, spa: 140, spd: 95, spe: 99},
-		abilities: {0: "Refridgerate"},
+		abilities: {0: "Refrigerate"},
 	},
 
 	//gen 6 :
@@ -4758,7 +4758,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		name: "Leechuption",
 		types: ["Fire", "Ice"],
 		baseStats: {hp: 90, atk: 45, def: 160, spa: 75, spd: 120, spe: 25},
-		abilities: {0: "Snow Warning", H: "Misty Moutain"},
+		abilities: {0: "Snow Warning", H: "Misty Mountain"},
 		heightm: 0.7,
 		weightkg: 122,
 		color: "White",

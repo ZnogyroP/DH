@@ -622,12 +622,18 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		rating: 4,
 	},
 	trafficjam: {
-		onStart(target) {
-			this.add('-ability', target, 'Traffic Jam', 'boost');
-			this.boost({spe: -1}, pokemon, target, null, true);
+		onAnySwitchIn(pokemon) {
+			const source = this.effectData.target;
+			if (pokemon === source) return;
+			for (const target of source.side.foe.active) {
+				if (!target || target.fainted) continue;
+				this.add('-ability', source, 'Traffic Jam', 'boost');
+				this.boost({spe: -1}, pokemon, source, null, true);
+				return;
+			}
 		}
 		name: "Traffic Jam",
-		rating: 3,
+		rating: 3.5,
 	},
 	trample: {
 		onStart(pokemon) {

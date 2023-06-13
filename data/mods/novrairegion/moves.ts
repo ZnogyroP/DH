@@ -11,6 +11,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Grass",
+		shortDesc: "Burns the target. Powder-based.",
 	},
 	amberwave: {
 		accuracy: 100,
@@ -28,6 +29,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Rock",
+		shortDesc: "Traps the target.",
 	},
 	anticoagulant: {
 		accuracy: 100,
@@ -44,6 +46,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Poison",
 		zMove: {boost: {spa: 1}},
+		shortDesc: "Drastically lowers the target's Sp. Def.",
 	},
 	aquaslap: {
 		accuracy: 100,
@@ -59,6 +62,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Water",
+		shortDesc: "10% chance to flinch.",
 	},
 	bananarang: {
 		accuracy: 90,
@@ -72,6 +76,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Grass",
+		shortDesc: "Hits twice.",
 	},
 	battleroar: {
 		accuracy: 100,
@@ -89,6 +94,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fighting",
+		shortDesc: "30% chance to lower target's Attack.",
 	},
 	beachtide: {
 		accuracy: 100,
@@ -109,6 +115,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Water",
+		shortDesc: "50% boost in harsh sunlight.",
 	},
 	boltin: {
 		accuracy: 100,
@@ -128,6 +135,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Steel",
+		shortDesc: "Boosts user's Speed.",
 	},
 	cloudcrash: {
 		accuracy: 100,
@@ -140,6 +148,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Flying",
+		shortDesc: "Deals damage.",
 	},
 	cuddle: {
 		accuracy: 100,
@@ -157,6 +166,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fairy",
+		shortDesc: "50% chance to lower target's Attack.",
 	},
 	curseofash: {
 		accuracy: 100,
@@ -172,6 +182,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fire",
+		shortDesc: "Curses the user.",
 	},
 	cursedpackage: {
 		accuracy: 100,
@@ -209,7 +220,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
-		contestType: "Clever",
+		shortDesc: "Hits in two turns.",
 	},
 	cyclone: {
 		accuracy: 100,
@@ -222,6 +233,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allAdjacent",
 		type: "Flying",
+		shortDesc: "Hits all adjacent targets.",
 	},
 	dragonfang: {
 		accuracy: 95,
@@ -249,6 +261,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		],
 		target: "normal",
 		type: "Dragon",
+		shortDesc: "10% chance to flinch or raise the user's Attack. Huntail-Novrai: neutral on Fairy-types.",
 	},
 	electriccheer: {
 		accuracy: true,
@@ -264,7 +277,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			spe: 1,
 		},
 		target: "adjacentAlly",
-		type: "Fighting",
+		type: "Electric",
+		shortDesc: "Raises ally's Sp. Atk and Speed.",
 	},
 	epilogue: { //TODO
 		accuracy: true,
@@ -280,6 +294,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "all",
 		type: "Normal",
+		shortDesc: "Incomplete. Ends field effects and prevents their activation.",
 	},
 	filthyterrain: {
 		accuracy: true,
@@ -326,6 +341,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "all",
 		type: "Poison",
+		shortDesc: "Boosts Poison moves and doubles poison status damage for five turns.",
 	},
 	flurrypeck: {
 		accuracy: 100,
@@ -339,6 +355,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Flying",
+		shortDesc: "Hits 2-5 times.",
 	},
 	fruitmunch: {
 		accuracy: true,
@@ -359,6 +376,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Grass",
+		shortDesc: "Eats held Berry, then restores 50% HP.",
 	},
 	glowsignal: {
 		accuracy: 100,
@@ -374,6 +392,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Psychic",
+		shortDesc: "Confuses target.",
 	},
 	honeybomb: {
 		accuracy: 95,
@@ -391,6 +410,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Bug",
+		shortDesc: "Lowers target's Speed.",
 	},
 	honeypour: {
 		accuracy: 100,
@@ -419,6 +439,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Bug",
+		shortDesc: "Lowers target's Speed and makes it weaker to Bug moves.",
 	},
 	icycharge: {
 		accuracy: 100,
@@ -430,8 +451,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'hail':
-			case 'snow':
+			case 'hail': case 'snow':
 				move.basePower *= 2;
 				break;
 			}
@@ -439,6 +459,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ice",
+		shortDesc: "Doubles power during snow.",
 	},
 	juicespray: {
 		accuracy: 100,
@@ -456,6 +477,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Grass",
+		shortDesc: "30% chance to lower target's accuracy.",
 	},
 	jumpstart: {
 		accuracy: 100,
@@ -473,6 +495,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Electric",
+		shortDesc: "Raises target's Speed.",
 	},
 	landslide: {
 		accuracy: 100,
@@ -495,6 +518,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ground",
+		shortDesc: "Doubles power after being hit.",
 	},
 	lightup: {
 		accuracy: true,
@@ -511,6 +535,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Fire",
+		shortDesc: "Raises Sp. Atk and accuracy.",
 	},
 	lovelariat: {
 		accuracy: 100,
@@ -528,6 +553,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
+		shortDesc: "Doubles power if target is infatuated.",
 	},
 	magnetlaunch: {
 		accuracy: 100,
@@ -545,6 +571,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Steel",
+		shortDesc: "Lowers user's Defense.",
 	},
 	meteorshower: {
 		accuracy: 100,
@@ -560,6 +587,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "allAdjacentFoes",
 		type: "Rock",
+		shortDesc: "10% chance to put targets to sleep.",
 	},
 	mysticsong: {
 		accuracy: 100,
@@ -577,6 +605,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Dragon",
+		shortDesc: "20% chance to raise Sp. Def.",
 	},
 	nuggetfling: {
 		accuracy: 100,
@@ -594,6 +623,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Steel",
+		shortDesc: "Hits 2-5 times. Rasgold: hits 4-5 times. Mizevaris: hits 5 times.",
 	},
 	oilfire: {
 		accuracy: 100,
@@ -614,6 +644,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fire",
+		shortDesc: "50% boost during rain.",
 	},
 	pixiedust: {
 		accuracy: 100,
@@ -634,6 +665,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
+		shortDesc: "Inflicts sleep, paralysis, or confusion.",
 	},
 	psibullet: {
 		accuracy: 95,
@@ -647,6 +679,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		shortDesc: "Always crits.",
 	},
 	quietrepose: {
 		accuracy: true,
@@ -663,6 +696,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allies",
 		type: "Ghost",
+		shortDesc: "Heals 25% and cures status.",
 	},
 	rainbowgust: {
 		num: 859,
@@ -687,6 +721,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fairy",
+		shortDesc: "10% chance to raise all stats.",
 	},
 	reservoir: {
 		accuracy: true,
@@ -706,6 +741,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allies",
 		type: "Water",
+		shortDesc: "50% heal. 66% heal during rain.",
 	},
 	rollingpress: {
 		accuracy: 100,
@@ -721,6 +757,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fighting",
+		shortDesc: "20% chance to confuse.",
 	},
 	royaldecree: { //TODO
 		accuracy: true,
@@ -736,6 +773,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "all",
 		type: "Normal",
+		shortDesc: "Incomplete. Prevents opposing side from raising stats for five turns.",
 	},
 	royalflush: {
 		accuracy: 100,
@@ -751,21 +789,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
-	},
-	rundown: {
-		accuracy: 100,
-		basePower: 65,
-		category: "Physical",
-		name: "Run Down",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
-		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
-		},
-		target: "normal",
-		type: "Steel",
+		shortDesc: "Uses Attack or Sp. Atk, whichever is higher.",
 	},
 	sandshot: {
 		accuracy: 90,
@@ -777,7 +801,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		self: {
 			onHit(source) {
-				if (!source.species.name === 'Flygon') return;
+				if (!source.species.name === 'Trapinch' && !source.species.name === 'Vibrava' && !source.species.name === 'Flygon') return;
 				this.field.setWeather('sandstorm');
 			},
 		},
@@ -789,6 +813,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Ground",
+		shortDesc: "30% chance to reduce target's accuracy. Flygon line: whips up a sandstorm.",
 	},
 	selfrepair: {
 		accuracy: true,
@@ -802,6 +827,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Steel",
+		shortDesc: "50% heal.",
 	},
 	shadowdance: {
 		accuracy: true,
@@ -821,6 +847,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Ghost",
+		shortDesc: "Boosts Sp. Def and Speed. Entomortis: boosts Attack, Sp. Def, and Speed.",
 	},
 	shoveoff: {
 		accuracy: 100,
@@ -839,6 +866,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Dark",
+		shortDesc: "Doubles power if target can evolve.",
 	},
 	skydive: {
 		accuracy: 100,
@@ -857,6 +885,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Flying",
+		shortDesc: "Breaks screens.",
 	},
 	slipup: {
 		accuracy: true,
@@ -884,6 +913,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Grass",
+		shortDesc: "If a contact move would hit, fails and attacker takes damage.",
 	},
 	snowballpelt: {
 		accuracy: 90,
@@ -897,6 +927,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ice",
+		shortDesc: "Hits 2-5 times. +1 priority.",
 	},
 	solarflare: {
 		accuracy: 100,
@@ -934,6 +965,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fire",
+		shortDesc: "Charges turn 1 unless in harsh sunlight. 50% chance to burn.",
 	},
 	solidkick: {
 		accuracy: 100,
@@ -946,6 +978,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
+		shortDesc: "Deals damage.",
 	},
 	soulchomp: {
 		accuracy: 100,
@@ -959,6 +992,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
+		shortDesc: "Uses target's Sp. Def.",
 	},
 	starstream: {
 		accuracy: 100,
@@ -974,6 +1008,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "allAdjacentFoes",
 		type: "Psychic",
+		shortDesc: "10% chance to put targets to sleep.",
 	},
 	stridentecho: {
 		accuracy: 100,
@@ -992,6 +1027,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dark",
 		zMove: {basePower: 140},
 		maxMove: {basePower: 120},
+		shortDesc: "Hits twice. 10% chance to confuse.",
 	},
 	swarmingterrain: {
 		accuracy: true,
@@ -1059,6 +1095,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return false;
 			},
 		},
+		shortDesc: "Boosts Bug moves by 30% and prevents healing for five turns.",
 		secondary: null,
 		target: "all",
 		type: "Bug",
@@ -1109,6 +1146,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fairy",
+		shortDesc: "Disables biting moves for two turns.",
 	},
 	threadlash: {
 		accuracy: 90,
@@ -1130,6 +1168,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Bug",
+		shortDesc: "Hits twice. 50% chance to lower Speed. Leavanny: hits three times.",
 	},
 	thunderclap: {
 		accuracy: 100,
@@ -1143,6 +1182,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Electric",
+		shortDesc: "Uses target's Sp. Def. Sound-based.",
 	},
 	toxicfumes: {
 		accuracy: 100,
@@ -1174,6 +1214,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Poison",
+		shortDesc: "30% chance to poison. 100% chance on Filthy Terrain. Vandibal line: sets Filthy Terrain.",
 	},
 	twinblade: {
 		accuracy: 90,
@@ -1188,6 +1229,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 		maxMove: {basePower: 130},
+		shortDesc: "Hits twice.",
 	},
 	violentswarm: {
 		accuracy: 100,
@@ -1208,6 +1250,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Bug",
+		shortDesc: "Always crits and hits all opponents on Swarming Terrain.",
 	},
 	wardance: {
 		accuracy: true,
@@ -1230,6 +1273,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Fighting",
+		shortDesc: "Sharply boosts Attack and Defense. Only works on first turn in battle.",
 	},
 	warmembrace: {
 		accuracy: 100,
@@ -1245,9 +1289,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Fire",
+		shortDesc: "100% chance to burn.",
 	},
 	windblast: {
-		accuracy: 90,
+		accuracy: 85,
 		basePower: 100,
 		category: "Special",
 		name: "Windblast",
@@ -1262,6 +1307,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Flying",
+		shortDesc: "10% chance to reduce target's Sp. Def.",
 	},
 	zapwrap: {
 		accuracy: 75,
@@ -1275,6 +1321,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Electric",
+		shortDesc: "Binds target for 4-5 turns.",
 	},
 	// modified moves
 	ancientpower: {
@@ -1349,10 +1396,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				status: 'psn',
 			});
 		},
+		shortDesc: "High crit ratio. 10% chance to poison. Crobat: always poisons.",
 	},
 	defog: {
 		inherit: true,
-		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
+		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1, wind: 1},
 	},
 	direclaw: {
 		inherit: true,
@@ -1448,6 +1496,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAccuracy(accuracy, target, source, move) {
 			if (source.species.name === 'Hoothoot' || source.species.name === 'Noctowl') return true;
 		},
+		shortDesc: "Puts target to sleep. Noctowl line: never misses.",
 	},
 	stockpile: {
 		inherit: true,
@@ -1494,6 +1543,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			},
 		},
+		shortDesc: "Raises Defense and Sp. Def. Pheromage line: sharply raises Defense and raises Sp. Def.",
 	},
 	leechlife: {
 		inherit: true,
@@ -1502,6 +1552,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.category = 'Special';
 			}
 		},
+		shortDesc: "50% HP drain. Memosquito: special.",
 	},
 	gigadrain: {
 		inherit: true,
@@ -1510,6 +1561,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.drain = [3, 4];
 			}
 		},
+		shortDesc: "50% HP drain. Soarup line: 75% HP drain.",
 	},
 	counter: {
 		inherit: true,
@@ -1519,12 +1571,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.drain = [1, 2];
 			}
 		},
+		shortDesc: "Returns twice as much physical attack damage. Blockstack line: 50% HP drain.",
 	},
 	dreameater: {
 		inherit: true,
 		onTryImmunity(target, source) {
 			return target.status === 'slp' || target.hasAbility('comatose') || source.species.name === 'Munna' || source.species.name === 'Musharna';
 		},
+		shortDesc: "Only works if target is asleep. Musharna line: always works.",
 	},
 	irontail: {
 		inherit: true,
@@ -1532,6 +1586,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAccuracy(accuracy, target, source, move) {
 			if (source.species.name === 'Steelix') return true;
 		},
+		shortDesc: "30% chance to lower target's Defense. Steelix: never misses.",
 	},
 	poisonfang: {
 		inherit: true,
@@ -1541,6 +1596,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "50% chance to badly poison. Horrendible: 50% damage boost.",
 	},
 	disarmingvoice: {
 		inherit: true,
@@ -1549,6 +1605,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return priority + 1;
 			}
 		},
+		shortDesc: "Never misses. Impawzible line: +1 priority.",
 	},
 	flamewheel: {
 		inherit: true,
@@ -1558,6 +1615,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "10% chance to burn. Hotrog line: 50% damage boost.",
 	},
 	explosion: {
 		inherit: true,
@@ -1566,6 +1624,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.type = 'Fire';
 			}
 		},
+		shortDesc: "KOs the user. Coboom line: Fire-type.",
 	},
 	lightscreen: {
 		inherit: true,
@@ -1597,6 +1656,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-sideend', side, 'move: Light Screen');
 			},
 		},
+		shortDesc: "Halves special damage for five turns. Brillumint line: lasts three more turns.",
 	},
 	thunderpunch: {
 		inherit: true,
@@ -1606,6 +1666,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.drain = [1, 2];
 			}
 		},
+		shortDesc: "10% chance to paralyze. Durassault line: 50% HP drain.",
 	},
 	wish: {
 		inherit: true,
@@ -1626,6 +1687,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			},
 		},
+		shortDesc: "Restores 50% HP at the end of next turn. Togekiss line: restores 75% HP.",
 	},
 	powerwhip: {
 		inherit: true,
@@ -1633,6 +1695,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAccuracy(accuracy, target, source, move) {
 			if (source.species.name === 'Tangela' || source.species.name === 'Tangrowth') return true;
 		},
+		shortDesc: "Tangrowth line: never misses.",
 	},
 	rototiller: {
 		inherit: true,
@@ -1661,6 +1724,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			}
 		},
+		shortDesc: "Boosts Attack and Sp. Atk of Grass-types. Toupe\u0301ary: sharply boosts Attack and Sp. Atk of Grass-types.",
 	},
 	facade: {
 		inherit: true,
@@ -1669,6 +1733,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.type = 'Dragon';
 			}
 		},
+		shortDesc: "Doubles power if statused. Sacretary: Dragon-type.",
 	},
 	crunch: {
 		inherit: true,
@@ -1678,12 +1743,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.drain = [1, 2];
 			}
 		},
+		shortDesc: "20% chance to lower target's Defense. Wrassassin: 50% HP drain.",
 	},
 	waterpulse: {
 		inherit: true,
 		onModifyCritRatio(critRatio, source, target) {
 			if (source.species.name === 'Clauncher' || source.species.name === 'Clawitzer') return 5;
 		},
+		shortDesc: "20% chance to confuse. Clawitzer line: always crits.",
 	},
 	magnetrise: {
 		inherit: true,
@@ -1692,6 +1759,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return priority + 1;
 			}
 		},
+		shortDesc: "Immune to Ground moves for five turns. Magnezone line: +1 priority.",
 	},
 	poltergeist: {
 		inherit: true,
@@ -1700,18 +1768,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.category = 'Special';
 			}
 		},
+		shortDesc: "Fails if target doesn't have an item. Rotom: special.",
 	},
 	rockblast: {
 		inherit: true,
 		onModifyMove(move, pokemon) {
 			if (pokemon.species.name === 'Rhyperior') move.multihit = [4, 5];
 		},
+		shortDesc: "Hits 2-5 times. Rhyperior: hits 4-5 times.",
 	},
 	sludgewave: {
 		inherit: true,
 		onEffectiveness(typeMod, target, type, source) {
 			if (type === 'Water' && (source.species.name === 'Grimer-Novrai' || source.species.name === 'Muk-Novrai')) return 1;
 		},
+		shortDesc: "10% chance to poison. Muk-Novrai line: Supereffective on Water types.",
 	},
 	suckerpunch: {
 		inherit: true,
@@ -1724,6 +1795,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return null;
 			}
 		},
+		shortDesc: "Fails if target is not attacking. Cacturne line: never fails.",
 	},
 	headsmash: {
 		inherit: true,
@@ -1732,6 +1804,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.recoil = [1, 4];
 			}
 		},
+		shortDesc: "50% recoil. Rampardos-Novrai line: 25% recoil.",
 	},
 	powergem: {
 		inherit: true,
@@ -1741,12 +1814,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "Omastar-Novrai line: 50% damage boost.",
 	},
 	hiddenpower: {
 		inherit: true,
 		onModifyCritRatio(critRatio, source, target) {
 			if (source.species.name === 'Intellibee') return 5;
 		},
+		shortDesc: "Changes type based on IVs. Intellibee: always crits.",
 	},
 	lifedew: {
 		inherit: true,
@@ -1754,6 +1829,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (['', 'slp', 'frz'].includes(pokemon.status) || (pokemon.species.name !== 'Haloe' && pokemon.species.name !== 'Aloverity')) return false;
 			pokemon.cureStatus();
 		},
+		shortDesc: "Heals 25% HP. Aloverity line: cures status.",
 	},
 	acrobatics: {
 		inherit: true,
@@ -1764,6 +1840,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			return move.basePower;
 		},
+		shortDesc: "Doubles power without a held item. Deliveerie line: always doubles power.",
 	},
 	glare: {
 		inherit: true,
@@ -1775,6 +1852,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-start', target, 'typechange', 'Rock');
 			}
 		},
+		shortDesc: "Paralyzes target. Gorgowatt line: changes target's type to Rock.",
 	},
 	dracometeor: {
 		inherit: true,
@@ -1783,6 +1861,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.self.boosts = {spa: -1}
 			}
 		},
+		shortDesc: "Harshly lowers user's Sp. Atk. Kaijupiter line: lowers user's Sp. Atk.",
 	},
 	thief: {
 		inherit: true,
@@ -1794,6 +1873,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				status: 'brn',
 			});
 		},
+		shortDesc: "Steals target's held item. Underhandit: burns target.",
 	},
 	rest: {
 		inherit: true,
@@ -1808,6 +1888,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
 		},
+		shortDesc: "Heals fully and sleeps for two turns. Snorlax: sleeps for one turn.",
 	},
 	reversal: {
 		inherit: true,
@@ -1816,6 +1897,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return priority + 1;
 			}
 		},
+		shortDesc: "Powers up with less HP. Taekwondodo line: +1 priority.",
 	},
 	bellydrum: {
 		inherit: true,
@@ -1830,6 +1912,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			this.boost({atk: 12}, target);
 		},
+		shortDesc: "Uses 50% HP to maximize Attack. Percusshell: uses 25% HP.",
 	},
 	drillpeck: {
 		inherit: true,
@@ -1839,6 +1922,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "Foolmingo: 50% damage boost.",
 	},
 	firelash: {
 		inherit: true,
@@ -1848,12 +1932,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "Lowers target's Defense. Pitcharade: 50% damage boost.",
 	},
 	dragonbreath: {
 		inherit: true,
 		onModifyCritRatio(critRatio, source, target) {
 			if (source.species.name === 'Varanox' || source.species.name === 'Halitox' || source.species.name === 'Juroxic') return 5;
 		},
+		shortDesc: "30% chance to paralyze. Juroxic line: always crits.",
 	},
 	fly: {
 		inherit: true,
@@ -1873,6 +1959,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			attacker.addVolatile('twoturnmove', defender);
 			return null;
 		},
+		shortDesc: "Flies up turn 1, attacks turn 2. Salamence: attacks in one turn.",
 	},
 	icefang: {
 		inherit: true,
@@ -1882,6 +1969,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "10% chance to flinch or freeze. Walrein: 50% damage boost.",
 	},
 	perishsong: {
 		inherit: true,
@@ -1890,6 +1978,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.condition.duration = 3;
 			}
 		},
+		shortDesc: "Affected targets faint in three turns. Sirenaut: faint in two turns.",
 	},
 	drainingkiss: {
 		inherit: true,
@@ -1899,5 +1988,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		shortDesc: "75% HP drain. Gorebyss-Novrai: 50% damage boost.",
 	},
 };

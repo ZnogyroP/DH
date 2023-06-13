@@ -311,7 +311,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		name: "Malice",
 		rating: 3,
 	},
-	mountaineernovrai: {
+	mountaineer: {
 		onDamage(damage, target, source, effect) {
 			if (effect && effect.id === 'stealthrock') {
 				return false;
@@ -326,7 +326,6 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		isBreakable: true,
 		name: "Mountaineer",
 		rating: 3,
-		num: -20,
 	},
 	nurturer: {
 		onSwap(target) {

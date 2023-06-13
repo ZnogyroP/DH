@@ -9,6 +9,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Adhesive",
 		rating: 3,
+		shortDesc: "30% chance to trap on contact.",
 	},
 	arcaneoverload: {
 		onAfterMoveSecondary(target, source, move) {
@@ -24,6 +25,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		}
 		name: "Arcane Overload",
 		rating: 3.5,
+		shortDesc: "Boosts most proficient stat when hit with a move that matches its type.",
 	},
 	avarice: {
 		onSetStatus(status, target, source, effect) {
@@ -58,6 +60,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Avarice", //TEST
 		rating: 3,
+		shortDesc: "Immune to status when holding Big Nugget. Boosts Attack if item is lost.",
 	},
 	bananasplit: {
 		onPrepareHit(source, target, move) {
@@ -81,6 +84,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Banana Split",
 		rating: 4,
+		shortDesc: "Grass moves hit twice. Second hit has half power.",
 	},
 	clairvoyance: {
 		onChargeMove(pokemon, target, move) {
@@ -91,6 +95,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Clairvoyance",
 		rating: 3,
+		shortDesc: "Skips charge turns.",
 	},
 	courageous: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -101,7 +106,8 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		isBreakable: true,
 		name: "Courageous",
-		rating: 4,
+		rating: 3,
+		shortDesc: "Halves damage while switching in.",
 	},
 	falsefire: {
 		onEffectiveness: function(typeMod, target, type, move) {
@@ -109,6 +115,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "False Fire", //TEST
 		rating: 2,
+		shortDesc: "Takes direct damage like a pure Fire-type.",
 	},
 	falseflier: {
 		onEffectiveness: function(typeMod, target, type, move) {
@@ -116,6 +123,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "False Flier", //TEST
 		rating: 2,
+		shortDesc: "Takes direct damage like a pure Flying-type.",
 	},
 	ferocious: {
 		onFoeBoost(boost, target, source, effect) {
@@ -134,6 +142,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Ferocious",
 		rating: 2,
+		shortDesc: "Opponents cannot raise Attack or Sp. Atk.",
 	},
 	fieryspirit: {
 		onModifyCritRatio(critRatio, source, target) {
@@ -141,6 +150,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Fiery Spirit",
 		rating: 1.5,
+		shortDesc: "Gets critical hits on burned targets.",
 	},
 	filthysurge: {
 		onStart(source) {
@@ -148,6 +158,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Filthy Surge",
 		rating: 4,
+		shortDesc: "Sets Filthy Terrain. Boosts Poison moves by 30% and doubles poison status damage.",
 	},
 	finale: {
 		onModifyAtkPriority: 5,
@@ -166,6 +177,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Finale",
 		rating: 2,
+		shortDesc: "Boosts Fighting moves at low HP.",
 	},
 	fracture: {
 		onDamagingHit(damage, target, source, move) {
@@ -180,6 +192,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Fracture",
 		rating: 3.5,
+		shortDesc: "30% chance to set Spikes on contact.",
 	},
 	greenthumb: {
 		onTryHit(target, source, move) {
@@ -203,7 +216,8 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		isBreakable: true,
 		name: "Green Thumb",
-		rating: 3,
+		rating: 3.5,
+		shortDesc: "Redirects and absorbs Grass moves to raise Sp. Atk.",
 	},
 	herbalist: {
 		onResidualOrder: 28,
@@ -221,6 +235,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Herbalist",
 		rating: 2.5,
+		shortDesc: "Regenerates used Herbs.",
 	},
 	illwill: {
 		onResidualOrder: 28,
@@ -247,6 +262,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Ill Will",
 		rating: 2.5,
+		shortDesc: "Lowers stats of poisoned targets each turn.",
 	},
 	jackpot: {
 		onAfterMoveSecondarySelf(pokemon, target, move) {
@@ -267,6 +283,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Jackpot",
 		rating: 2,
+		shortDesc: "Raises a random stat after a critical hit.",
 	},
 	lunarphase: {
 		onResidualOrder: 29,
@@ -301,6 +318,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		isPermanent: true,
 		name: "Lunar Phase",
 		rating: 0,
+		shortDesc: "Changes Astroyatlas's form.",
 	},
 	malice: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -310,6 +328,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Malice",
 		rating: 3,
+		shortDesc: "Raises Sp. Atk after a KO.",
 	},
 	mountaineer: {
 		onDamage(damage, target, source, effect) {
@@ -326,6 +345,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		isBreakable: true,
 		name: "Mountaineer",
 		rating: 3,
+		shortDesc: "Immune to Rock moves.",
 	},
 	nurturer: {
 		onSwap(target) {
@@ -335,6 +355,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Nurturer",
 		rating: 3,
+		shortDesc: "Cures an incoming ally's status.",
 	},
 	nutrientrunoff: {
 		onFoeTryHeal(relayVar, target, source, effect){
@@ -343,6 +364,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Nutrient Runoff", //NEEDS TESTING, NO WAY THIS WORKS
 		rating: 3,
+		shortDesc: "Steals half of an opponent's healing.",
 	},
 	parasitic: {
 		onModifyMove(move) {
@@ -351,6 +373,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Parasitic",
 		rating: 5,
+		shortDesc: "Steals target's stat boosts on contact.",
 	},
 	pathogenic: {
 		onDamagingHit(damage, target, source, move) {
@@ -374,6 +397,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Pathogenic",
 		rating: 3,
+		shortDesc: "Spreads on contact. Hurts non-Poison-types.",
 	},
 	perplexing: {
 		onDamagingHit(damage, target, source, move) {
@@ -385,6 +409,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Perplexing",
 		rating: 2,
+		shortDesc: "30% chance to confuse on contact.",
 	},
 	plottwist: {
 		onTryHit(target, source, move) {
@@ -398,6 +423,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		isBreakable: true,
 		name: "Plot Twist",
 		rating: 3.5,
+		shortDesc: "Heals 25% when hit with a Fairy move.",
 	},
 	pridefulstance: {
 		onModifyAtkPriority: 5,
@@ -426,6 +452,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Prideful Stance",
 		rating: 3,
+		shortDesc: "30% Attack boost if target has a type advantage.",
 	},
 	realitywarp: {
 		onStart(pokemon) {
@@ -437,6 +464,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 			},
 		name: "Reality Warp",
 		rating: 3.5,
+		shortDesc: "Inverts incoming attack matchups.",
 	},
 	reelin: {
 		onFoeTrapPokemon(pokemon) {
@@ -453,6 +481,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Reel In",
 		rating: 4,
+		shortDesc: "Traps opposing Water-types.",
 	},
 	regurgitation: {
 		onModifyAtkPriority: 5,
@@ -471,6 +500,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Regurgitation",
 		rating: 3,
+		shortDesc: "Boosts moves by 30% after eating a Berry.",
 	},
 	relentless: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -479,12 +509,14 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 			}
 		},
 		name: "Relentless",
-		rating: 3.5,
+		rating: 3,
+		shortDesc: "Boosts Speed after a KO.",
 	},
 	romantic: {
 		// implemented in the corresponding moves
 		name: "Romantic",
 		rating: 3,
+		shortDesc: "Can infatuate any target.",
 	},
 	rubberbody: {
 		onTryHit(pokemon, target, move) {
@@ -495,7 +527,8 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		isBreakable: true,
 		name: "Rubber Body",
-		rating: 3,
+		rating: 4,
+		shortDesc: "Immune to Electric moves.",
 	},
 	scavenge: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -505,6 +538,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Scavenge",
 		rating: 3,
+		shortDesc: "Heals 25% after a KO.",
 	},
 	secondwind: {
 		onDamage(damage, target, source, effect) {
@@ -539,6 +573,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Second Wind",
 		rating: 3.5,
+		shortDesc: "Starts a Tailwind when knocked under 50% HP.",
 	},
 	snowplow: {
 		onImmunity(type, pokemon) {
@@ -552,6 +587,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Snow Plow",
 		rating: 1.5,
+		shortDesc: "30% Attack boost in snow.",
 	},
 	sunscreen: {
 		onWeather(target, source, effect) {
@@ -576,6 +612,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		isBreakable: true,
 		name: "Sunscreen",
 		rating: 1.5,
+		shortDesc: "Heals each turn in sun. Immune to burns.",
 	},
 	supertaste: {
 		onTryHeal(damage, target, source, effect) {
@@ -613,6 +650,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Super Taste",
 		rating: 2,
+		shortDesc: "Doubles effect of Berries and Leftovers.",
 	},
 	swarmingsurge: {
 		onStart(source) {
@@ -620,6 +658,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Swarming Surge",
 		rating: 4,
+		shortDesc: "Sets Swarming Terrain. Boosts Bug moves by 30% and prevents healing.",
 	},
 	trafficjam: {
 		onAnySwitchIn(pokemon) {
@@ -633,7 +672,8 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 			}
 		}
 		name: "Traffic Jam",
-		rating: 3.5,
+		rating: 3,
+		shortDesc: "Incoming opponents have their Speed lowered.",
 	},
 	trample: {
 		onStart(pokemon) {
@@ -653,6 +693,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Trample",
 		rating: 4,
+		shortDesc: "Destroys hazards and terrain on switch-in.",
 	},
 	// Modified or canon Abilities
 	galewings: {
@@ -678,6 +719,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 			return accuracy;
 		},
 		rating: 2,
+		shortDesc: "First move used in battle will not miss.",
 	},
 	raindish: {
 		inherit: true,
@@ -701,6 +743,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		name: "Sand Veil",
 		rating: 1.5,
 		num: 8,
+		shortDesc: "Reduces damage taken in a sandstorm.",
 	},
 	snowcloak: {
 		onImmunity(type, pokemon) {
@@ -715,6 +758,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		name: "Snow Cloak",
 		rating: 1.5,
 		num: 81,
+		shortDesc: "Reduces damage taken in snow.",
 	},
 	watercompaction: {
 		inherit: true,
@@ -737,6 +781,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 				this.boost({def: 1});
 			}
 		},
+		shortDesc: "Halves Water damage. Boosts Defense when hit by a Water move.",
 	},
 	windpower: {
 		onStart(pokemon) {
@@ -760,6 +805,6 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		name: "Wind Power",
 		shortDesc: "Sp. Atk raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
-		rating: 3.5,
+		rating: 3,
 	},
 };

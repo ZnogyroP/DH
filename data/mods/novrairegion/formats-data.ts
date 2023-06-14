@@ -2780,31 +2780,31 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	surusen: {
 		randomBattleMoves: ["stealthrock", "quietrepose", "lastrespects", "willowisp", "bodypress", "stoneedge"],
 		randomBattleLevel: 70,
-		tier: "Uber",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	ikarma: {
 		randomBattleMoves: ["lastrespects", "poltergeist", "closecombat", "shadowsneak", "flareblitz", "swordsdance", "pursuit"],
 		randomBattleLevel: 68,
-		tier: "Uber",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	nedareap: {
 		randomBattleMoves: ["nastyplot", "shadowball", "eeriespell", "focusblast"],
 		randomBattleLevel: 68,
-		tier: "Uber",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	utsoul: {
 		randomBattleMoves: ["scald", "quietrepose", "shadowball", "hex", "defog", "taunt", "icebeam"],
 		randomBattleLevel: 68,
-		tier: "Uber",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	anaither: {
 		randomBattleMoves: ["shadowball", "calmmind", "quietrepose", "dazzlinggleam", "wish", "teleport", "protect", "healbell"],
 		randomBattleLevel: 66,
-		tier: "Uber",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	mizevaris: {
@@ -2822,7 +2822,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	astroyatlas: {
 		randomBattleMoves: ["quiverdance", "moonblast", "earthpower", "roost", "healingwish"],
 		randomBattleLevel: 68,
-		tier: "NovraiRegion",
+		tier: "NovraiUbers",
 		doublesTier: "NovraiDOU",
 	},
 	migreat: {

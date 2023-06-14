@@ -1424,9 +1424,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	lastrespects: {
 		inherit: true,
-		basePower: 25,
+		basePower: 50,
 		basePowerCallback(pokemon, target, move) {
-			return 25 + 25 * pokemon.side.totalFainted;
+			return 50 + 20 * pokemon.side.totalFainted;
 		},
 	},
 	luminacrash: {

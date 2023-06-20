@@ -17,6 +17,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 88, def: 70, spa: 57, spd: 64, spe: 66},
 		abilities: {0: "Overgrow", H: "Tough Claws"},
 		weightkg: 27,
+		prevo: "Snipsnap",
+		evoLevel: 17,
 		evos: ["Lobstrike"],
 	},
 	lobstrike: {
@@ -27,6 +29,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 121, def: 82, spa: 78, spd: 74, spe: 80},
 		abilities: {0: "Overgrow", H: "Tough Claws"},
 		weightkg: 70,
+		prevo: "Crable",
+		evoLevel: 35,
 	},
 	impyre: {
 		num: 4.5,
@@ -46,6 +50,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 66, atk: 72, def: 58, spa: 73, spd: 60, spe: 86},
 		abilities: {0: "Blaze", H: "Scavenge"},
 		weightkg: 20,
+		prevo: "Impyre",
+		evoLevel: 17,
 		evos: ["Nocturnace"],
 	},
 	nocturnace: {
@@ -56,6 +62,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 71, atk: 98, def: 71, spa: 100, spd: 78, spe: 117},
 		abilities: {0: "Blaze", H: "Scavenge"},
 		weightkg: 59,
+		prevo: "Incubat",
+		evoLevel: 35,
 	},
 	scuddle: {
 		num: 7.5,
@@ -75,6 +83,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 52, def: 93, spa: 72, spd: 75, spe: 46},
 		abilities: {0: "Torrent", H: "Rain Dish"},
 		weightkg: 60,
+		prevo: "Scuddle",
+		evoLevel: 17,
 		evos: ["Cascarapace"],
 	},
 	cascarapace: {
@@ -85,6 +95,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 97, atk: 73, def: 112, spa: 90, spd: 104, spe: 59},
 		abilities: {0: "Torrent", H: "Rain Dish"},
 		weightkg: 155,
+		prevo: "Bubbeetle",
+		evoLevel: 35,
 	},
 	fervole: {
 		num: 10.5,
@@ -102,6 +114,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 80, def: 61, spa: 45, spd: 102, spe: 85},
 		abilities: {0: "Romantic", 1: "Pickup", H: "Friend Guard"},
 		weightkg: 17,
+		prevo: "Fervole",
+		evoLevel: 17,
 	},
 	bidoof: {
 		inherit: true,
@@ -128,6 +142,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 50, atk: 78, def: 58, spa: 45, spd: 45, spe: 94},
 		abilities: {0: "Justified", 1: "Big Pecks", H: "Guts"},
 		weightkg: 25,
+		prevo: "Sidepeck",
+		evoLevel: 20,
 		evos: ["Superheron"],
 	},
 	superheron: {
@@ -137,6 +153,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 110, def: 80, spa: 60, spd: 60, spe: 115},
 		abilities: {0: "Justified", 1: "Big Pecks", H: "Guts"},
 		weightkg: 55.5,
+		prevo: "Justork",
+		evoLevel: 35,
 	},
 	hoothoot: {
 		inherit: true,
@@ -163,6 +181,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 66, atk: 101, def: 58, spa: 75, spd: 75, spe: 92},
 		abilities: {0: "Relentless", H: "Bad Dreams"},
 		weightkg: 12,
+		prevo: "Dusby",
+		evoLevel: 19,
+		evoCondition: "at night",
 	},
 	gourmaggot: {
 		num: 21.5,
@@ -180,6 +201,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 106, atk: 85, def: 93, spa: 51, spd: 76, spe: 44},
 		abilities: {0: "Super Taste", 1: "Gluttony", H: "Poison Heal"},
 		weightkg: 41,
+		prevo: "Gourmaggot",
+		evoLevel: 20,
 	},
 	winture: {
 		num: 23.5,
@@ -197,6 +220,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 120, def: 79, spa: 65, spd: 76, spe: 85},
 		abilities: {0: "Snow Plow", 1: "Slush Rush", H: "Mountaineer"},
 		weightkg: 70,
+		prevo: "Winture",
+		evoLevel: 32,
 	},
 	snorunt: {
 		inherit: true,
@@ -249,6 +274,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 80, def: 125, spa: 45, spd: 110, spe: 55},
 		abilities: {0: "Battle Armor", 1: "Fracture", H: "Solid Rock"},
 		weightkg: 80,
+		prevo: "Bijarre",
+		evoLevel: 27,
 	},
 	roggenrola: {
 		inherit: true,
@@ -275,6 +302,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 133, atk: 95, def: 92, spa: 51, spd: 65, spe: 51},
 		abilities: {0: "Unaware", H: "Adaptability"},
 		weightkg: 105,
+		prevo: "Glaburrow",
+		evoLevel: 28,
 	},
 	neurymph: {
 		num: 40.5,
@@ -292,6 +321,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 45, atk: 20, def: 50, spa: 35, spd: 70, spe: 30},
 		abilities: {0: "Unnerve", 1: "Telepathy", H: "Simple"},
 		weightkg: 2.5,
+		prevo: "Neurymph",
+		evoLevel: 10,
 		evos: ["Memosquito"],
 	},
 	memosquito: {
@@ -301,6 +332,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 60, def: 45, spa: 105, spd: 70, spe: 100},
 		abilities: {0: "Unnerve", 1: "Telepathy", H: "Simple"},
 		weightkg: 5,
+		prevo: "Cognisalis",
+		evoLevel: 16,
 	},
 	wibow: {
 		num: 43.5,
@@ -318,6 +351,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 95, def: 75, spa: 55, spd: 75, spe: 120},
 		abilities: {0: "Inner Focus", 1: "Adhesive", H: "Overcoat"},
 		weightkg: 6,
+		prevo: "Wibow",
+		evoLevel: 23,
 	},
 	peculine: {
 		num: 45.5,
@@ -335,6 +370,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 110, atk: 110, def: 70, spa: 110, spd: 70, spe: 70},
 		abilities: {0: "Own Tempo", 1: "Wonder Skin", H: "Contrary"},
 		weightkg: 90,
+		prevo: "Peculine",
+		evoLevel: 40,
 	},
 	budew: {
 		inherit: true,
@@ -373,6 +410,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 60, def: 60, spa: 107, spd: 68, spe: 100},
 		abilities: {0: "Dry Skin", H: "Flash Fire"},
 		weightkg: 6.6,
+		prevo: "Cherubi-Novrai",
+		evoLevel: 25,
 	},
 	nectair: {
 		num: 54.5,
@@ -390,11 +429,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 74, atk: 75, def: 57, spa: 103, spd: 57, spe: 116},
 		abilities: {0: "Sap Sipper", 1: "Gale Wings", H: "Speed Boost"},
 		weightkg: 25,
+		prevo: "Nectair",
+		evoLevel: 25,
 	},
 	lillipup: {
 		inherit: true,
 	},
-	herdier-novrai: {
+	herdiernovrai: {
 		num: 507,
 		species: "Herdier-Novrai",
 		baseSpecies: "Herdier",
@@ -403,9 +444,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 80, def: 65, spa: 35, spd: 65, spe: 60},
 		abilities: {0: "Intimidate", 1: "Slush Rush", H: "Snow Warning"},
 		weightkg: 14.7,
+		prevo: "Lillipup",
+		evoLevel: 16,
 		evos: ["Stoutland-Novrai"],
 	},
-	stoutland-novrai: {
+	stoutlandnovrai: {
 		num: 508,
 		species: "Stoutland-Novrai",
 		baseSpecies: "Stoutland",
@@ -414,6 +457,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 110, def: 90, spa: 45, spd: 90, spe: 80},
 		abilities: {0: "Intimidate", 1: "Slush Rush", H: "Snow Warning"},
 		weightkg: 78,
+		prevo: "Herdier-Novrai",
+		evoLevel: 32,
 	},
 	vileech: {
 		num: 59.5,
@@ -431,6 +476,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 95, def: 65, spa: 75, spd: 65, spe: 70},
 		abilities: {0: "Parasitic", H: "Dry Skin"},
 		weightkg: 20.5,
+		prevo: "Vileech",
+		evoLevel: 24,
 	},
 	yolkoo: {
 		num: 61.5,
@@ -448,6 +495,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 115, def: 75, spa: 55, spd: 65, spe: 95},
 		abilities: {0: "Unburden", 1: "Infiltrator", H: "Opportunist"},
 		weightkg: 20,
+		prevo: "Yolkoo",
+		evoLevel: 24,
 	},
 	bonslynovrai: {
 		num: 438,
@@ -469,6 +518,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 125, def: 110, spa: 30, spd: 75, spe: 30},
 		abilities: {0: "Sturdy", 1: "Skill Link", H: "Rough Skin"},
 		weightkg: 44.5,
+		prevo: "Bonsly-Novrai",
+		evoType: "levelMove",
+		evoMove: "Mimic",
 	},
 	happiny: {
 		inherit: true,
@@ -495,6 +547,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 59, def: 132, spa: 93, spd: 75, spe: 26},
 		abilities: {0: "Effect Spore", 1: "Mummy", H: "Mycelium Might"},
 		weightkg: 59,
+		prevo: "Whispore",
+		evoLevel: 30,
 	},
 	sewaddle: {
 		inherit: true,
@@ -524,6 +578,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 92, atk: 69, def: 56, spa: 108, spd: 101, spe: 84},
 		abilities: {0: "Grassy Surge", 1: "Tangling Hair", H: "Long Reach"},
 		weightkg: 40,
+		prevo: "Gorgarden",
+		evoType: "useItem",
+		evoItem: "Leaf Stone",
 	},
 	cutiefly: {
 		inherit: true,
@@ -566,6 +623,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 70, def: 95, spa: 105, spd: 80, spe: 95},
 		abilities: {0: "Overcoat", 1: "Flash Fire", H: "Drought"},
 		weightkg: 36,
+		prevo: "Bonsquire",
+		evoType: "useItem",
+		evoItem: "Fire Stone",
 	},
 	tandemaus: {
 		inherit: true,
@@ -594,6 +654,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 80, def: 110, spa: 40, spd: 110, spe: 55},
 		abilities: {0: "Sturdy", 1: "Stamina", H: "No Guard"},
 		weightkg: 64,
+		prevo: "Sockback",
+		evoType: "levelExtra",
+		evoCondition: "with 100+ Defense EVs",
 	},
 	abra: {
 		inherit: true,
@@ -627,6 +690,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 68, atk: 72, def: 115, spa: 106, spd: 60, spe: 74},
 		abilities: {0: "Magnet Pull", H: "Surge Surfer"},
 		weightkg: 45,
+		prevo: "Platypull",
+		evoType: "useItem",
+		evoItem: "Metal Coat",
 	},
 	tympole: {
 		inherit: true,
@@ -653,6 +719,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 108, atk: 55, def: 67, spa: 78, spd: 125, spe: 42},
 		abilities: {0: "Dry Skin", 1: "Huge Power", H: "Symbiosis"},
 		weightkg: 57,
+		prevo: "Narysite",
+		evoLevel: 27,
 	},
 	onix: {
 		inherit: true,
@@ -684,6 +752,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 79, atk: 100, def: 125, spa: 81, spd: 60, spe: 95},
 		abilities: {0: "Shed Skin", 1: "Scavenge", H: "Intimidate"},
 		weightkg: 215,
+		prevo: "Dekoi",
+		evoLevel: 25,
 	},
 	snoozea: {
 		num: 108.5,
@@ -701,6 +771,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 127, atk: 35, def: 62, spa: 58, spd: 60, spe: 45},
 		abilities: {0: "Sunscreen", H: "Oblivious"},
 		weightkg: 17,
+		prevo: "Snoozea",
+		evoLevel: 22,
 		evos: ["Atlaxocean"],
 	},
 	atlaxocean: {
@@ -710,6 +782,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 160, atk: 56, def: 82, spa: 88, spd: 94, spe: 35},
 		abilities: {0: "Sunscreen", H: "Drought"},
 		weightkg: 198,
+		prevo: "Sosola",
+		evoType: "useItem",
+		evoItem: "Sun Stone",
 	},
 	eyeti: {
 		num: 111.5,
@@ -727,6 +802,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 47, atk: 39, def: 72, spa: 146, spd: 121, spe: 76},
 		abilities: {0: "Compound Eyes", 1: "Trace", H: "Download"},
 		weightkg: 68,
+		prevo: "Eyeti",
+		evoLevel: 32,
 	},
 	binacle: {
 		inherit: true,
@@ -768,6 +845,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 62, atk: 168, def: 72, spa: 58, spd: 83, spe: 39},
 		abilities: {0: "Limber", 1: "Strong Jaw", H: "Poison Point"},
 		weightkg: 180,
+		prevo: "Infestinal",
+		evoLevel: 35,
 	},
 	chinchou: {
 		inherit: true,
@@ -792,6 +871,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 40, def: 85, spa: 110, spd: 130, spe: 20},
 		abilities: {0: "Magician", 1: "Perplexing", H: "Magic Bounce"},
 		weightkg: 36,
+		prevo: "Slugic",
+		evoType: "levelFriendship",
 	},
 	candleru: {
 		num: 127.5,
@@ -809,6 +890,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 45, def: 82, spa: 123, spd: 63, spe: 96},
 		abilities: {0: "Flash Fire", 1: "Fiery Spirit", H: "Swift Swim"},
 		weightkg: 40,
+		prevo: "Candleru",
+		evoLevel: 29,
+		evoCondition: "with a Fire-type move",
 	},
 	exfinguish: {
 		num: 129.5,
@@ -817,6 +901,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 123, def: 63, spa: 45, spd: 82, spe: 96},
 		abilities: {0: "White Smoke", 1: "Thermal Exchange", H: "Heatproof"},
 		weightkg: 26,
+		prevo: "Candleru",
+		evoLevel: 29,
+		evoCondition: "without a Fire-type move",
 	},
 	horsea: {
 		inherit: true,
@@ -854,6 +941,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Pickup", 1: "Stalwart", H: "Vital Spirit"},
 		weightkg: 91,
 		evos: ["Heftersack"],
+		prevo: "Knapback",
+		evoLevel: 28,
 	},
 	heftersack: {
 		num: 136.5,
@@ -863,6 +952,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 116, def: 122, spa: 50, spd: 78, spe: 49},
 		abilities: {0: "Gluttony", 1: "Stalwart", H: "Vital Spirit"},
 		weightkg: 215,
+		prevo: "Bulkpack",
+		evoType: "levelFriendship",
 	},
 	houndour: {
 		inherit: true,
@@ -891,6 +982,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 100, def: 110, spa: 75, spd: 80, spe: 30},
 		abilities: {0: "Honey Gather", 1: "Thick Fat", H: "Regenerator"},
 		weightkg: 93,
+		prevo: "Slowpoke-Novrai",
+		evoLevel: 37,
 	},
 	slowkingnovrai: {
 		num: 199,
@@ -901,6 +994,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 100, def: 80, spa: 75, spd: 110, spe: 30},
 		abilities: {0: "Honey Gather", 1: "Thick Fat", H: "Swarming Surge"},
 		weightkg: 82,
+		prevo: "Slowpoke-Galar",
+		evoType: "useItem",
+		evoItem: "Royal Jelly",
 	},
 	exeggcute: {
 		inherit: true,
@@ -932,6 +1028,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 134, def: 105, spa: 35, spd: 70, spe: 70},
 		abilities: {0: "Limber", 1: "Prankster", H: "Iron Fist"},
 		weightkg: 86,
+		prevo: "Puppanzee",
+		evoLevel: 34,
 	},
 	drumble: {
 		num: 148.5,
@@ -949,6 +1047,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 90, def: 90, spa: 60, spd: 60, spe: 50},
 		abilities: {0: "Multiscale", H: "Sap Sipper"},
 		weightkg: 43,
+		prevo: "Drumble",
+		evoLevel: 18,
 		evos: ["Draborate"],
 	},
 	draborate: {
@@ -958,6 +1058,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 120, def: 130, spa: 80, spd: 80, spe: 40},
 		abilities: {0: "Multiscale", H: "Sap Sipper"},
 		weightkg: 340,
+		prevo: "Draggop",
+		evoLevel: 36,
 	},
 	atmosoft: {
 		num: 151.5,
@@ -975,6 +1077,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 85, def: 62, spa: 85, spd: 62, spe: 84},
 		abilities: {0: "Cloud Nine", 1: "Second Wind", H: "Drizzle"},
 		weightkg: 0.8,
+		prevo: "Atmosoft",
+		evoLevel: 24,
 		evos: ["Stormendous"],
 	},
 	stormendous: {
@@ -984,6 +1088,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 115, def: 70, spa: 110, spd: 70, spe: 85},
 		abilities: {0: "Cloud Nine", 1: "Second Wind", H: "Aerilate"},
 		weightkg: 2.2,
+		prevo: "Nimbluff",
+		evoType: "useItem",
+		evoItem: "Shiny Stone",
 	},
 	chillow: {
 		num: 154.5,
@@ -1001,6 +1108,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 90, def: 110, spa: 60, spd: 95, spe: 45},
 		abilities: {0: "Cotton Down", 1: "Snow Plow", H: "Thermal Exchange"},
 		weightkg: 62,
+		prevo: "Chillow",
+		evoType: "useItem",
+		evoItem: "Ice Stone",
 	},
 	swirlix: {
 		inherit: true,
@@ -1019,7 +1129,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 10,
 		evos: ["Dubwool-Novrai"],
 	},
-	dubwool: {
+	dubwoolnovrai: {
 		num: 832,
 		species: "Dubwool-Novrai",
 		baseSpecies: "Dubwool",
@@ -1028,6 +1138,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 72, atk: 80, def: 120, spa: 40, spd: 90, spe: 88},
 		abilities: {0: "Iron Barbs", 1: "Steadfast", H: "Bulletproof"},
 		weightkg: 77,
+		prevo: "Wooloo-Novrai",
+		evoLevel: 24,
 	},
 	kitterwaul: {
 		num: 160.5,
@@ -1045,6 +1157,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 61, atk: 49, def: 48, spa: 111, spd: 107, spe: 123},
 		abilities: {0: "Soundproof", 1: "Contrary", H: "Perplexing"},
 		weightkg: 4,
+		prevo: "Kitterwaul",
+		evoType: "useItem",
+		evoItem: "Moon Stone",
 	},
 	gliderweb: {
 		num: 162.5,
@@ -1070,6 +1185,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 125, def: 135, spa: 45, spd: 70, spe: 40},
 		abilities: {0: "Sticky Hold", 1: "Adhesive", H: "Chlorophyll"},
 		weightkg: 80,
+		prevo: "Sunglew",
+		evoType: "useItem",
+		evoItem: "Leaf Stone",
 	},
 	mushmettle: {
 		num: 165.5,
@@ -1087,6 +1205,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 63, atk: 113, def: 75, spa: 79, spd: 75, spe: 95},
 		abilities: {0: "Lightning Rod", 1: "Fiery Spirit", H: "Effect Spore"},
 		weightkg: 18.5,
+		prevo: "Mushmettle",
+		evoType: "useItem",
+		evoItem: "Fire Stone",
 	},
 	puppond: {
 		num: 167.5,
@@ -1104,6 +1225,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 95, def: 73, spa: 89, spd: 60, spe: 113},
 		abilities: {0: "Swift Swim", 1: "Courageous", H: "Limber"},
 		weightkg: 28,
+		prevo: "Puppond",
+		evoType: "useItem",
+		evoItem: "Water Stone",
 	},
 	ratten: {
 		num: 169.5,
@@ -1121,6 +1245,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 98, def: 65, spa: 53, spd: 65, spe: 126},
 		abilities: {0: "Stench", 1: "Toxic Boost", H: "Perish Body"},
 		weightkg: 21,
+		prevo: "Ratten",
+		evoLevel: 24,
 	},
 	splattod: {
 		num: 171.5,
@@ -1138,6 +1264,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 55, def: 100, spa: 85, spd: 65, spe: 90},
 		abilities: {0: "Toxic Debris", 1: "Stench", H: "Aftermath"},
 		weightkg: 10.5,
+		prevo: "Splattod",
+		evoLevel: 20,
 	},
 	jalopig: {
 		num: 173.5,
@@ -1155,6 +1283,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 73, atk: 100, def: 105, spa: 54, spd: 63, spe: 117},
 		abilities: {0: "Trample", 1: "Motor Drive", H: "Heavy Metal"},
 		weightkg: 745,
+		prevo: "Jalopig",
+		evoLevel: 32,
 	},
 	varoom: {
 		inherit: true,
@@ -1180,6 +1310,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 52, atk: 61, def: 87, spa: 61, spd: 87, spe: 34},
 		abilities: {0: "Aftermath", 1: "Leaf Guard", H: "Reckless"},
 		weightkg: 14,
+		prevo: "Grenaize",
+		evoLevel: 19,
 		evos: ["Coboom"],
 	},
 	coboom: {
@@ -1189,6 +1321,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 139, def: 68, spa: 102, spd: 62, spe: 84},
 		abilities: {0: "Aftermath", 1: "No Guard", H: "Reckless"},
 		weightkg: 51,
+		prevo: "Blastalk",
+		evoLevel: 37,
 	},
 	deerling: {
 		inherit: true,
@@ -1215,6 +1349,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 30, def: 65, spa: 105, spd: 45, spe: 75},
 		abilities: {0: "Dazzling", 1: "Levitate", H: "Illuminate"},
 		weightkg: 11,
+		prevo: "Dimwatt",
+		evoLevel: 18,
 		evos: ["Brillumint"],
 	},
 	brillumint: {
@@ -1225,6 +1361,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 45, def: 85, spa: 135, spd: 60, spe: 105},
 		abilities: {0: "Dazzling", 1: "Levitate", H: "Illuminate"},
 		weightkg: 38,
+		prevo: "Bulbright",
+		evoLevel: 38,
 	},
 	alkaalite: {
 		num: 185.5,
@@ -1244,6 +1382,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 105, def: 75, spa: 30, spd: 65, spe: 45},
 		abilities: {0: "Volt Absorb", 1: "Levitate", H: "Battery"},
 		weightkg: 20.5,
+		prevo: "Alkaalite",
+		evoLevel: 18,
 		evos: ["Durassault"],
 	},
 	durassault: {
@@ -1254,6 +1394,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 135, def: 105, spa: 45, spd: 85, spe: 60},
 		abilities: {0: "Volt Absorb", 1: "Iron Fist", H: "Battery"},
 		weightkg: 340,
+		prevo: "Oblittery",
+		evoLevel: 38,
 	},
 	kookout: {
 		num: 188.5,
@@ -1271,6 +1413,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 99, atk: 75, def: 80, spa: 53, spd: 120, spe: 50},
 		abilities: {0: "Flame Body", H: "Lingering Aroma"},
 		weightkg: 94,
+		prevo: "Kookout",
+		evoType: "useItem",
+		evoItem: "Fire Stone",
 	},
 	tunnowl: {
 		num: 190.5,
@@ -1288,6 +1433,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 62, atk: 88, def: 64, spa: 48, spd: 47, spe: 73},
 		abilities: {0: "Prideful Stance", 1: "Jackpot", H: "Sand Rush"},
 		weightkg: 21,
+		prevo: "Tunnowl",
+		evoLevel: 26,
 		evos: ["Raptorado"],
 	},
 	raptorado: {
@@ -1297,6 +1444,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 78, atk: 124, def: 75, spa: 61, spd: 78, spe: 94},
 		abilities: {0: "Prideful Stance", 1: "Jackpot", H: "Sand Rush"},
 		weightkg: 44.5,
+		prevo: "Prospecktor",
+		evoLevel: 39,
 	},
 	aron: {
 		inherit: true,
@@ -1323,6 +1472,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 99, atk: 120, def: 154, spa: 35, spd: 82, spe: 35},
 		abilities: {0: "Stalwart", 1: "Mold Breaker", H: "Skill Link"},
 		weightkg: 347,
+		prevo: "Playmight",
+		evoLevel: 35,
 	},
 	graemblin: {
 		num: 198.5,
@@ -1342,6 +1493,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 88, atk: 118, def: 58, spa: 88, spd: 58, spe: 88},
 		abilities: {0: "Anger Point", 1: "Innards Out", H: "Hustle"},
 		weightkg: 58,
+		prevo: "Graemblin",
+		evoLevel: 38,
 	},
 	seekore: {
 		num: 200.5,
@@ -1361,6 +1514,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 105, def: 130, spa: 40, spd: 75, spe: 65},
 		abilities: {0: "Rock Head", 1: "Sheer Force", H: "Illuminate"},
 		weightkg: 160,
+		prevo: "Seekore",
+		evoLevel: 33,
 	},
 	rasgold: {
 		num: 202.5,
@@ -1399,6 +1554,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 105, atk: 85, def: 85, spa: 70, spd: 115, spe: 30},
 		abilities: {0: "Static", 1: "Damp", H: "Fluffy"},
 		weightkg: 106,
+		prevo: "Caughtton",
+		evoLevel: 28,
+		evoCondition: "with an Electric-type move",
 	},
 	peepsqueak: {
 		num: 209.5,
@@ -1416,6 +1574,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 83, atk: 86, def: 35, spa: 100, spd: 75, spe: 106},
 		abilities: {0: "Rubber Body", H: "Soundproof"},
 		weightkg: 0.4,
+		prevo: "Peepsqueak",
+		evoType: "levelFriendship",
 	},
 	ralts: {
 		inherit: true,
@@ -1445,6 +1605,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 63, def: 59, spa: 105, spd: 88, spe: 108},
 		abilities: {0: "Snow Cloak", 1: "Fur Coat", H: "Cheek Pouch"},
 		weightkg: 24,
+		prevo: "Itachill",
+		evoType: "useItem",
+		evoItem: "Thunder Stone",
 	},
 	slippetal: {
 		num: 217.5,
@@ -1464,6 +1627,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 89, atk: 71, def: 57, spa: 71, spd: 113, spe: 99},
 		abilities: {0: "Tangled Feet", 1: "Aroma Veil", H: "Cute Charm"},
 		weightkg: 3,
+		prevo: "Slippetal",
+		evoType: "levelExtra",
+		evoCondition: "with 100+ Sp. Def EVs",
 	},
 	athlace: {
 		num: 219.5,
@@ -1483,6 +1649,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 68, atk: 122, def: 85, spa: 61, spd: 65, spe: 99},
 		abilities: {0: "Quick Feet", 1: "Moxie", H: "Receiver"},
 		weightkg: 4.5,
+		prevo: "Athlace",
+		evoType: "levelExtra",
+		evoCondition: "with 100+ Attack EVs",
 	},
 	togepi: {
 		inherit: true,
@@ -1511,6 +1680,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 45, def: 75, spa: 140, spd: 90, spe: 85},
 		abilities: {0: "Battery", 1: "Berserk", H: "Magnet Pull"},
 		weightkg: 33,
+		prevo: "Acipeasi",
+		evoLevel: 32,
 	},
 	venonat: {
 		inherit: true,
@@ -1534,6 +1705,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 145, def: 85, spa: 60, spd: 70, spe: 80},
 		abilities: {0: "Cud Chew", 1: "Strong Jaw", H: "Pressure"},
 		weightkg: 400,
+		prevo: "Fawntom",
+		evoLevel: 40,
 	},
 	yanma: {
 		inherit: true,
@@ -1557,6 +1730,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 129, def: 77, spa: 82, spd: 77, spe: 103},
 		abilities: {0: "Swarming Surge", 1: "Defiant", H: "Ferocious"},
 		weightkg: 128,
+		prevo: "Verminion",
+		evoLevel: 40,
 	},
 	miscuit: {
 		num: 234.5,
@@ -1574,6 +1749,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 86, atk: 74, def: 122, spa: 56, spd: 113, spe: 44},
 		abilities: {0: "Sweet Veil", 1: "Well-Baked Body", H: "Magician"},
 		weightkg: 350,
+		prevo: "Miscuit",
+		evoLevel: 38,
 	},
 	bananza: {
 		num: 236.5,
@@ -1599,6 +1776,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 95, def: 70, spa: 100, spd: 70, spe: 115},
 		abilities: {0: "Tangling Hair", H: "Intimidate"},
 		weightkg: 65,
+		prevo: "Morostache",
+		evoType: "useItem",
+		evoItem: "Prim Scissors",
 	},
 	morosquatch: {
 		num: 239.5,
@@ -1607,6 +1787,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 125, atk: 125, def: 100, spa: 50, spd: 85, spe: 45},
 		abilities: {0: "Tangling Hair", H: "Emergency Exit"},
 		weightkg: 140,
+		prevo: "Morostache",
+		evoType: "useItem",
+		evoItem: "Hair Tonic",
 	},
 	tangela: {
 		inherit: true,
@@ -1630,6 +1813,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 85, def: 115, spa: 100, spd: 60, spe: 60},
 		abilities: {0: "Flower Veil", 1: "Seed Sower", H: "Water Absorb"},
 		weightkg: 50,
+		prevo: "Herbald",
+		evoType: "levelHold",
+		evoItem: "Miracle Seed",
 	},
 	heracross: {
 		inherit: true,
@@ -1652,6 +1838,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 75, def: 80, spa: 65, spd: 95, spe: 85},
 		abilities: {0: "Justified", 1: "Courageous", H: "Steadfast"},
 		weightkg: 64.5,
+		prevo: "Fistiscuff",
+		evoLevel: 31,
+		evoCondition: "during the day",
 	},
 	sacretary: {
 		num: 247.5,
@@ -1687,6 +1876,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 60, def: 70, spa: 90, spd: 90, spe: 125},
 		abilities: {0: "Overcoat", 1: "Drizzle", H: "Lightning Rod"},
 		weightkg: 3.5,
+		prevo: "Glumbrella",
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 	},
 	greavard: {
 		inherit: true,
@@ -1727,6 +1919,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 118, def: 90, spa: 70, spd: 80, spe: 42},
 		abilities: {0: "Poison Touch", 1: "Suction Cups", H: "Merciless"},
 		weightkg: 39,
+		prevo: "Clobbopus-Novrai",
+		evoType: "levelMove",
+		evoMove: "Toxic",
 	},
 	sandygast: {
 		inherit: true,
@@ -1751,6 +1946,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 52, def: 120, spa: 52, spd: 128, spe: 78},
 		abilities: {0: "Healer", 1: "Hydration", H: "Nurturer"},
 		weightkg: 22,
+		prevo: "Wrassure",
+		evoLevel: 32,
 	},
 	wrassassin: {
 		num: 263.5,
@@ -1759,6 +1956,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 127, def: 50, spa: 107, spd: 58, spe: 88},
 		abilities: {0: "Relentless", 1: "Merciless", H: "Infiltrator"},
 		weightkg: 18,
+		prevo: "Wrassure",
+		evoLevel: 32,
+		evoCondition: "at night",
 	},
 	staryu: {
 		inherit: true,
@@ -1782,6 +1982,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 110, atk: 100, def: 140, spa: 50, spd: 70, spe: 40},
 		abilities: {0: "Reel In", H: "Long Reach"},
 		weightkg: 860,
+		prevo: "Baytate",
+		evoLevel: 40,
 	},
 	skrelpnovrai: {
 		num: 690,
@@ -1803,6 +2005,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 75, def: 90, spa: 97, spd: 123, spe: 44},
 		abilities: {0: "Immunity", 1: "Natural Cure", H: "Adaptability"},
 		weightkg: 81.5,
+		prevo: "Skrelp-Novrai",
+		evoLevel: 38,
 	},
 	clauncher: {
 		inherit: true,
@@ -1826,6 +2030,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 68, atk: 99, def: 60, spa: 95, spd: 70, spe: 106},
 		abilities: {0: "Surge Surfer", 1: "Pickpocket", H: "Galvanize"},
 		weightkg: 18,
+		prevo: "Nemosis",
+		evoLevel: 32,
 	},
 	jigglwiggl: {
 		num: 274.5,
@@ -1843,6 +2049,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 145, atk: 51, def: 91, spa: 67, spd: 87, spe: 44},
 		abilities: {0: "Effect Spore", 1: "Water Absorb", H: "Regenerator"},
 		weightkg: 30.5,
+		prevo: "Jigglwiggl",
+		evoLevel: 33,
 	},
 	pyukumukunovrai: {
 		num: 771,
@@ -1897,6 +2105,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 59, def: 101, spa: 137, spd: 83, spe: 43},
 		abilities: {0: "Heatproof", 1: "Analytic", H: "Power of Alchemy"},
 		weightkg: 48,
+		prevo: "X-Trac",
+		evoType: "levelExtra",
+		evoCondition: "with 100 Sp. Atk EVs",
 	},
 	joltik: {
 		inherit: true,
@@ -1922,6 +2133,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 85, def: 110, spa: 90, spd: 65, spe: 90},
 		abilities: {0: "Light Metal", 1: "Technician", H: "Motor Drive"},
 		weightkg: 130,
+		prevo: "Widgix",
+		evoType: "other",
+		evoCondition: "Craft a TM with it in your party",
 	},
 	porygon: {
 		inherit: true,
@@ -1997,6 +2211,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 99, atk: 68, def: 71, spa: 120, spd: 70, spe: 86},
 		abilities: {0: "Regurgitation", 1: "Scavenge", H: "Corrosion"},
 		weightkg: 60,
+		prevo: "Upchick",
+		evoLevel: 35,
 	},
 	rellor: {
 		inherit: true,
@@ -2027,6 +2243,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 57, atk: 40, def: 65, spa: 86, spd: 73, spe: 49},
 		abilities: {0: "Symbiosis", 1: "Harvest", H: "Grassy Surge"},
 		weightkg: 4.8,
+		prevo: "Hatenna-Novrai",
+		evoLevel: 32,
 		evos: ["Hatterene-Novrai"],
 	},
 	hatterenenovrai: {
@@ -2039,6 +2257,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 57, atk: 90, def: 95, spa: 136, spd: 103, spe: 29},
 		abilities: {0: "Symbiosis", 1: "Harvest", H: "Grassy Surge"},
 		weightkg: 5.1,
+		prevo: "Hattrem-Novrai",
+		evoLevel: 42,
 	},
 	impidimpnovrai: {
 		num: 859,
@@ -2062,6 +2282,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 75, def: 60, spa: 45, spd: 55, spe: 70},
 		abilities: {0: "Prankster", 1: "Quick Draw", H: "Sand Rush"},
 		weightkg: 18,
+		prevo: "Impidimp-Novrai",
+		evoLevel: 32,
 		evos: ["Grimmsnarl-Novrai"],
 	},
 	grimmsnarlnovrai: {
@@ -2074,6 +2296,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 120, def: 95, spa: 65, spd: 75, spe: 60},
 		abilities: {0: "Prankster", 1: "Quick Draw", H: "Sand Rush"},
 		weightkg: 133,
+		prevo: "Morgrem-Novrai",
+		evoLevel: 42,
 	},
 	darumaka: {
 		inherit: true,
@@ -2113,6 +2337,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 105, atk: 65, def: 75, spa: 105, spd: 100, spe: 50},
 		abilities: {0: "Sand Force", 1: "Filthy Surge", H: "Flare Boost"},
 		weightkg: 80,
+		prevo: "Grimer-Novrai",
+		evoLevel: 38,
 	},
 	bramblin: {
 		inherit: true,
@@ -2147,6 +2373,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 41, def: 83, spa: 78, spd: 121, spe: 97},
 		abilities: {0: "Misty Surge", 1: "Heatproof", H: "Rain Dish"},
 		weightkg: 44,
+		prevo: "Kuloff",
+		evoType: "useItem",
+		evoItem: "Water Stone",
 	},
 	ferroseed: {
 		inherit: true,
@@ -2199,6 +2428,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 71, atk: 64, def: 113, spa: 102, spd: 85, spe: 60},
 		abilities: {0: "Gooey", H: "Clear Body"},
 		weightkg: 211,
+		prevo: "Ambug",
+		evoLevel: 37,
 	},
 	spinostern: {
 		num: 328.5,
@@ -2216,6 +2447,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 68, atk: 122, def: 75, spa: 60, spd: 75, spe: 95},
 		abilities: {0: "Swift Swim", H: "Sheer Force"},
 		weightkg: 300,
+		prevo: "Spinostern",
+		evoLevel: 37,
 	},
 	cranidosnovrai: {
 		num: 408,
@@ -2237,6 +2470,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 87, atk: 155, def: 60, spa: 75, spd: 50, spe: 68},
 		abilities: {0: "Mountaineer", H: "Relentless"},
 		weightkg: 102.5,
+		prevo: "Cranidos-Novrai",
+		evoLevel: 30,
 	},
 	omanytenovrai: {
 		num: 138,
@@ -2258,10 +2493,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 60, def: 135, spa: 105, spd: 70, spe: 55},
 		abilities: {0: "Dazzling", 1: "Marvel Scale", H: "Jackpot"},
 		weightkg: 170,
+		prevo: "Omanyte-Novrai",
+		evoLevel: 40,
 	},
-	cambyro: {
+	cambryo: {
 		num: 334.5,
-		species: "Cambyro",
+		species: "Cambryo",
 		types: ["Rock", "Psychic"],
 		baseStats: {hp: 85, atk: 27, def: 46, spa: 105, spd: 47, spe: 45},
 		abilities: {0: "Neutralizing Gas", 1: "Reality Warp", H: "Psychic Surge"},
@@ -2275,6 +2512,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 105, atk: 40, def: 68, spa: 150, spd: 80, spe: 52},
 		abilities: {0: "Neutralizing Gas", 1: "Reality Warp", H: "Psychic Surge"},
 		weightkg: 45,
+		prevo: "Cambryo",
+		evoLevel: 39,
 	},
 	granvas: {
 		num: 336.5,
@@ -2294,6 +2533,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 76, atk: 100, def: 70, spa: 100, spd: 53, spe: 96},
 		abilities: {0: "Trace", 1: "Technician", H: "Sand Veil"},
 		weightkg: 42,
+		prevo: "Granvas",
+		evoLevel: 39,
 	},
 	aerodactyl: {
 		inherit: true,
@@ -2329,6 +2570,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 70, def: 85, spa: 50, spd: 90, spe: 111},
 		abilities: {0: "Pathogenic", H: "Poison Touch"},
 		weightkg: 14,
+		prevo: "Itcheep",
+		evoLevel: 28,
 	},
 	minsect: {
 		num: 344.5,
@@ -2346,6 +2589,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 76, atk: 49, def: 56, spa: 103, spd: 75, spe: 122},
 		abilities: {0: "Natural Cure", 1: "Compound Eyes", H: "Sweet Veil"},
 		weightkg: 7,
+		prevo: "Minsect",
+		evoLevel: 30,
 	},
 	vanillitenovrai: {
 		num: 582,
@@ -2367,6 +2612,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 51, atk: 65, def: 65, spa: 80, spd: 70, spe: 59},
 		abilities: {0: "Ripen", 1: "Leaf Guard", H: "Weak Armor"},
 		weightkg: 41,
+		prevo: "Vanillite-Novrai",
+		evoLevel: 30,
 		evos: ["Vanilluxe-Novrai"],
 	},
 	vanilluxenovrai: {
@@ -2378,6 +2625,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 71, atk: 95, def: 85, spa: 110, spd: 95, spe: 79},
 		abilities: {0: "Ripen", 1: "Banana Split", H: "Weak Armor"},
 		weightkg: 57.5,
+		prevo: "Vanillish-Novrai",
+		evoLevel: 42,
 	},
 	shivrr: {
 		num: 349.5,
@@ -2395,6 +2644,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 58, atk: 105, def: 45, spa: 142, spd: 65, spe: 90},
 		abilities: {0: "Weak Armor", 1: "Damp", H: "Water Veil"},
 		weightkg: 42,
+		prevo: "Shivrr",
+		evoLevel: 37,
 	},
 	quaintbrush: {
 		num: 351.5,
@@ -2412,6 +2663,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 47, def: 83, spa: 102, spd: 141, spe: 52},
 		abilities: {0: "Magician", H: "Illusion"},
 		weightkg: 120,
+		prevo: "Quaintbrush",
+		evoType: "levelFriendship",
+		evoCondition: "during the day",
 	},
 	thinkblot: {
 		num: 353.5,
@@ -2429,6 +2683,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 48, atk: 35, def: 40, spa: 139, spd: 126, spe: 107},
 		abilities: {0: "Forewarn", H: "Trace"},
 		weightkg: 3,
+		prevo: "Thinkblot",
+		evoType: "levelFriendship",
+		evoCondition: "at night",
 	},
 	scholarva: {
 		num: 355.5,
@@ -2446,6 +2703,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 89, def: 55, spa: 119, spd: 55, spe: 104},
 		abilities: {0: "Compound Eyes", 1: "Technician", H: "Magic Guard"},
 		weightkg: 10.5,
+		prevo: "Scholarva",
+		evoType: "levelExtra",
+		evoCondition: "with an Unown in the party",
 	},
 	unown: {
 		inherit: true,
@@ -2458,7 +2718,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Omega",
 		types: ["Psychic"],
 		gender: "N",
-		baseStats: {hp: 48, atk: 122 def: 88, spa: 122, spd: 88, spe: 88},
+		baseStats: {hp: 48, atk: 122, def: 88, spa: 122, spd: 88, spe: 88},
 		abilities: {0: "Trace"},
 		weightkg: 24.9,
 		requiredItem: "Strange Runes",
@@ -2480,6 +2740,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 83, def: 67, spa: 101, spd: 101, spe: 67},
 		abilities: {0: "Aroma Veil", 1: "Herbalist", H: "Storm Drain"},
 		weightkg: 42,
+		prevo: "Kreakup",
+		evoType: "useItem",
+		evoItem: "Leaf Stone",
 	},
 	haloe: {
 		num: 360.5,
@@ -2499,6 +2762,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 40, def: 75, spa: 75, spd: 140, spe: 70},
 		abilities: {0: "Triage", 1: "Water Veil", H: "Healer"},
 		weightkg: 80,
+		prevo: "Haloe",
+		evoLevel: 36,
 	},
 	diretom: {
 		num: 362.5,
@@ -2516,6 +2781,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 187, atk: 58, def: 40, spa: 100, spd: 40, spe: 79},
 		abilities: {0: "Nutrient Runoff", 1: "Storm Drain", H: "Solar Power"},
 		weightkg: 74,
+		prevo: "Diretom",
+		evoType: "useItem",
+		evoItem: "Growth Mulch",
 	},
 	plectric: {
 		num: 364.5,
@@ -2532,7 +2800,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Electric", "Dark"],
 		baseStats: {hp: 130, atk: 125, def: 70, spa: 70, spd: 70, spe: 75},
 		abilities: {0: "Ferocious", H: "Electromorphosis"},
-		weightkg: 8.4,
+		weightkg: 84,
+		prevo: "Plectric",
+		evoLevel: 38,
+		evoCondition: "with a Dark-type in the party",
 	},
 	roenin: {
 		num: 366.5,
@@ -2550,6 +2821,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 78, atk: 119, def: 90, spa: 58, spd: 60, spe: 105},
 		abilities: {0: "Prideful Stance", 1: "Sharpness", H: "Justified"},
 		weightkg: 32,
+		prevo: "Roenin",
+		evoType: "levelMove",
+		evoMove: "Swords Dance",
 	},
 	harminth: {
 		num: 368.5,
@@ -2599,6 +2873,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 77, atk: 44, def: 66, spa: 99, spd: 101, spe: 121},
 		abilities: {0: "Shield Dust", 1: "Magic Guard", H: "Telepathy"},
 		weightkg: 25.5,
+		prevo: "Sweeptite",
+		evoType: "useItem",
+		evoItem: "Moon Stone",
 	},
 	librareek: {
 		num: 378.5,
@@ -2617,6 +2894,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Plot Twist", H: "Trace"},
 		weightkg: 8,
 		evos: ["Authorror"],
+		prevo: "Librareek",
+		evoLevel: 28,
 	},
 	authorror: {
 		num: 380.5,
@@ -2625,6 +2904,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 66, atk: 128, def: 104, spa: 61, spd: 92, spe: 74},
 		abilities: {0: "Plot Twist", H: "Trace"},
 		weightkg: 340,
+		prevo: "Calligrave",
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 	},
 	ghostage: {
 		num: 381.5,
@@ -2642,6 +2924,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 66, atk: 69, def: 49, spa: 76, spd: 37, spe: 105},
 		abilities: {0: "Wandering Spirit", 1: "Wind Rider", H: "Cloud Nine"},
 		weightkg: 0.8,
+		prevo: "Ghostage",
+		evoLevel: 28,
 		evos: ["Deliveerie"],
 	},
 	deliveerie: {
@@ -2651,6 +2935,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 88, atk: 90, def: 65, spa: 94, spd: 55, spe: 133},
 		abilities: {0: "Wandering Spirit", 1: "Wind Rider", H: "Cloud Nine"},
 		weightkg: 40,
+		prevo: "Paranormail",
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 	},
 	romirror: {
 		num: 384.5,
@@ -2670,6 +2957,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 115, def: 70, spa: 105, spd: 55, spe: 95},
 		abilities: {0: "Fracture", 1: "Mirror Armor", H: "Magic Bounce"},
 		weightkg: 64.5,
+		prevo: "Romirror",
+		evoType: "levelExtra",
+		evoCondition: "at low HP",
 	},
 	mimikyu: {
 		inherit: true,
@@ -2700,6 +2990,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 96, atk: 41, def: 74, spa: 117, spd: 117, spe: 60},
 		abilities: {0: "Levitate"},
 		weightkg: 45,
+		prevo: "Meduzap",
+		evoLevel: 38,
 	},
 	skarmory: {
 		inherit: true,
@@ -2728,6 +3020,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 105, def: 105, spa: 35, spd: 55, spe: 40},
 		abilities: {0: "Moxie", 1: "Iron Fist", H: "Prideful Stance"},
 		weightkg: 60,
+		prevo: "Brawnze",
+		evoLevel: 30,
 		evos: ["Goalden"],
 	},
 	goalden: {
@@ -2738,6 +3032,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 145, def: 145, spa: 40, spd: 70, spe: 55},
 		abilities: {0: "Moxie", 1: "Iron Fist", H: "Prideful Stance"},
 		weightkg: 425,
+		prevo: "Silvictor",
+		evoType: "levelExtra",
+		evoCondition: "with 510 EVs",
 	},
 	cleffa: {
 		inherit: true,
@@ -2764,6 +3061,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 58, def: 72, spa: 100, spd: 72, spe: 68},
 		abilities: {0: "Victory Star", 1: "Insomnia", H: "Analytic"},
 		weightkg: 38,
+		prevo: "Protauri",
+		evoLevel: 36,
 		evos: ["Kaijupiter"],
 	},
 	kaijupiter: {
@@ -2773,6 +3072,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 95, atk: 64, def: 88, spa: 137, spd: 88, spe: 78},
 		abilities: {0: "Victory Star", 1: "Insomnia", H: "Analytic"},
 		weightkg: 122,
+		prevo: "Stargazaur",
+		evoType: "levelFriendship",
+		evoCondition: "at night",
 	},
 	minior: {
 		inherit: true,
@@ -2802,6 +3104,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 73, atk: 69, def: 92, spa: 96, spd: 71, spe: 104},
 		abilities: {0: "Tinted Lens", 1: "Stakeout", H: "Keen Eye"},
 		weightkg: 41,
+		prevo: "Recorvid",
+		evoLevel: 36,
 	},
 	culprint: {
 		num: 406.5,
@@ -2819,6 +3123,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 133, def: 73, spa: 84, spd: 62, spe: 91},
 		abilities: {0: "Pickpocket", 1: "Iron Fist", H: "Frisk"},
 		weightkg: 25,
+		prevo: "Culprint",
+		evoType: "levelMove",
+		evoMove: "Double Hit",
 	},
 	eggad: {
 		num: 408.5,
@@ -2836,6 +3143,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 75, def: 165, spa: 75, spd: 75, spe: 35},
 		abilities: {0: "Intimidate", 1: "Shell Armor", H: "Liquid Ooze"},
 		weightkg: 68,
+		prevo: "Eggad",
+		evoType: "useItem",
+		evoItem: "Metal Coat",
 	},
 	klink: {
 		inherit: true,
@@ -2865,6 +3175,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 90, def: 118, spa: 123, spd: 82, spe: 32},
 		abilities: {0: "Steely Spirit", 1: "Flame Body", H: "Magician"},
 		weightkg: 238,
+		prevo: "Djironn",
+		evoLevel: 39,
 	},
 	tinkatink: {
 		inherit: true,
@@ -2930,6 +3242,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		otherFormes: ["Dektout-Diamonds", "Dektout-Clubs", "Dektout-Spades"],
 		formeOrder: ["Dektout-Hearts", "Dektout-Diamonds", "Dektout-Clubs", "Dektout-Spades"],
 		weightkg: 0.5,
+		prevo: "Riskard",
+		evoType: "useItem",
+		evoItem: "Sun Stone",
 	},
 	dektoutdiamonds: {
 		num: 419.5,
@@ -2940,6 +3255,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 65, def: 105, spa: 120, spd: 65, spe: 90},
 		abilities: {0: "Super Luck", 1: "Jackpot", H: "Competitive"},
 		weightkg: 0.5,
+		prevo: "Riskard-Diamonds",
+		evoType: "useItem",
+		evoItem: "Shiny Stone",
 	},
 	dektoutclubs: {
 		num: 419.5,
@@ -2950,6 +3268,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 120, def: 65, spa: 65, spd: 105, spe: 90},
 		abilities: {0: "Super Luck", 1: "Jackpot", H: "Moxie"},
 		weightkg: 0.5,
+		prevo: "Riskard-Clubs",
+		evoType: "useItem",
+		evoItem: "Moon Stone",
 	},
 	dektoutspades: {
 		num: 419.5,
@@ -2960,6 +3281,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 120, def: 105, spa: 65, spd: 65, spe: 90},
 		abilities: {0: "Super Luck", 1: "Jackpot", H: "Defiant"},
 		weightkg: 0.5,
+		prevo: "Riskard-Spades",
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 	},
 	beldum: {
 		inherit: true,
@@ -3008,6 +3332,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 132, atk: 94, def: 100, spa: 60, spd: 85, spe: 59},
 		abilities: {0: "Clear Body", H: "Filter"},
 		weightkg: 650,
+		prevo: "Puriphin",
+		evoLevel: 41,
 	},
 	allywag: {
 		num: 430.5,
@@ -3025,6 +3351,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 105, def: 25, spa: 80, spd: 60, spe: 105},
 		abilities: {0: "Levitate", 1: "Opportunist", H: "Keen Eye"},
 		weightkg: 0.2,
+		prevo: "Allywag",
+		evoLevel: 34,
 		evos: ["Scurvessel"],
 	},
 	scurvessel: {
@@ -3034,6 +3362,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 135, def: 50, spa: 95, spd: 85, spe: 90},
 		abilities: {0: "Sniper", 1: "Opportunist", H: "Keen Eye"},
 		weightkg: 25,
+		prevo: "Avigate",
+		evoLevel: 44,
 	},
 	dondozo: {
 		inherit: true,
@@ -3075,6 +3405,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 67, atk: 107, def: 98, spa: 43, spd: 91, spe: 99},
 		abilities: {0: "Cursed Body", 1: "Finale", H: "Defiant"},
 		weightkg: 30,
+		prevo: "Dodojo",
+		evoType: "levelExtra",
+		evoCondition: "at low HP",
 	},
 	tropius: {
 		inherit: true,
@@ -3111,6 +3444,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 89, atk: 103, def: 61, spa: 108, spd: 66, spe: 81},
 		abilities: {0: "Tinted Lens", 1: "Frisk", H: "Chlorophyll"},
 		weightkg: 55,
+		prevo: "Karroot",
+		evoLevel: 38,
 	},
 	rufflet: {
 		inherit: true,
@@ -3140,6 +3475,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 99, atk: 51, def: 84, spa: 65, spd: 74, spe: 25},
 		abilities: {0: "Sticky Hold", 1: "Super Taste", H: "Sweet Veil"},
 		weightkg: 44,
+		prevo: "Gluctose",
+		evoLevel: 38,
 		evos: ["Gummiwyrm"],
 	},
 	gummiwyrm: {
@@ -3149,6 +3486,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 134, atk: 70, def: 106, spa: 87, spd: 95, spe: 35},
 		abilities: {0: "Sticky Hold", 1: "Super Taste", H: "Sweet Veil"},
 		weightkg: 120,
+		prevo: "Onychew",
+		evoType: "useItem",
+		evoItem: "Rare Candy",
 	},
 	foolmingo: {
 		num: 457.5,
@@ -3182,6 +3522,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 63, atk: 71, def: 63, spa: 114, spd: 109, spe: 110},
 		abilities: {0: "Early Bird", 1: "Competitive", H: "Serene Grace"},
 		weightkg: 19.5,
+		prevo: "Bonfird",
+		evoLevel: 44,
 	},
 	kappow: {
 		num: 461.5,
@@ -3199,6 +3541,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 102, atk: 79, def: 86, spa: 101, spd: 116, spe: 40},
 		abilities: {0: "Magma Armor", 1: "Anger Shell", H: "Flash Fire"},
 		weightkg: 155,
+		prevo: "Kappow",
+		evoType: "useItem",
+		evoItem: "Fire Stone",
 	},
 	trapinch: {
 		inherit: true,
@@ -3227,6 +3572,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 62, atk: 89, def: 111, spa: 45, spd: 78, spe: 25},
 		abilities: {0: "Scrappy", H: "Shell Armor"},
 		weightkg: 22,
+		prevo: "Slithm",
+		evoLevel: 33,
 		evos: ["Percusshell"],
 	},
 	percusshell: {
@@ -3236,6 +3583,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 96, atk: 107, def: 140, spa: 55, spd: 100, spe: 30},
 		abilities: {0: "Scrappy", H: "Shell Armor"},
 		weightkg: 220,
+		prevo: "Spiroll",
+		evoLevel: 45,
 	},
 	gnomad: {
 		num: 469.5,
@@ -3253,6 +3602,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 54, def: 84, spa: 78, spd: 66, spe: 82},
 		abilities: {0: "Green Thumb", 1: "Harvest", H: "Cloud Nine"},
 		weightkg: 25,
+		prevo: "Gnomad",
+		evoLevel: 34,
 		evos: ["Gnotorious"],
 	},
 	gnotorious: {
@@ -3262,6 +3613,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 106, atk: 82, def: 124, spa: 110, spd: 112, spe: 66},
 		abilities: {0: "Green Thumb", 1: "Harvest", H: "Cloud Nine"},
 		weightkg: 220,
+		prevo: "Gnoblety",
+		evoLevel: 54,
 	},
 	ohman: {
 		num: 472.5,
@@ -3279,6 +3632,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 75, def: 65, spa: 115, spd: 20, spe: 155},
 		abilities: {0: "Rattled", 1: "Run Away", H: "Wimp Out"},
 		weightkg: 28,
+		prevo: "Ohman",
+		evoLevel: 37,
 	},
 	papernova: {
 		num: 474.5,
@@ -3296,6 +3651,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 102, atk: 68, def: 55, spa: 104, spd: 110, spe: 81},
 		abilities: {0: "Levitate"},
 		weightkg: 4,
+		prevo: "Papernova",
+		evoType: "useItem",
+		evoItem: "Sun Stone",
 	},
 	scyther: {
 		inherit: true,
@@ -3323,6 +3681,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 113, atk: 90, def: 109, spa: 100, spd: 88, spe: 40},
 		abilities: {0: "Perplexing", 1: "Psychic Surge", H: "Wonder Skin"},
 		weightkg: 950,
+		prevo: "Elepath",
+		evoLevel: 41,
 	},
 	jangmoo: {
 		inherit: true,
@@ -3349,6 +3709,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 73, def: 69, spa: 88, spd: 57, spe: 68},
 		abilities: {0: "Ferocious", 1: "Stench", H: "Quick Feet"},
 		weightkg: 45,
+		prevo: "Varanox",
+		evoLevel: 38,
 		evos: ["Juroxic"],
 	},
 	juroxic: {
@@ -3358,6 +3720,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 78, atk: 112, def: 85, spa: 133, spd: 85, spe: 107},
 		abilities: {0: "Ferocious", 1: "Stench", H: "Quick Feet"},
 		weightkg: 72,
+		prevo: "Halitox",
+		evoLevel: 52,
 	},
 	snowitall: {
 		num: 487.5,
@@ -3375,6 +3739,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 75, atk: 30, def: 95, spa: 100, spd: 70, spe: 55},
 		abilities: {0: "Neuroforce", 1: "Refrigerate", H: "Forewarn"},
 		weightkg: 42,
+		prevo: "Snowitall",
+		evoLevel: 31,
 		evos: ["Amygdalanche"],
 	},
 	amygdalanche: {
@@ -3384,6 +3750,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 90, atk: 40, def: 120, spa: 125, spd: 90, spe: 65},
 		abilities: {0: "Neuroforce", 1: "Refrigerate", H: "Forewarn"},
 		weightkg: 244,
+		prevo: "Subzerebrum",
+		evoLevel: 42,
 	},
 	stantler: {
 		inherit: true,
@@ -3419,6 +3787,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 125, atk: 87, def: 52, spa: 101, spd: 81, spe: 59},
 		abilities: {0: "Snow Warning", 1: "Iron Barbs", H: "Fluffy"},
 		weightkg: 65,
+		prevo: "Pinguin",
+		evoLevel: 35,
 	},
 	arctire: {
 		num: 497.5,
@@ -3436,6 +3806,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 66, atk: 109, def: 84, spa: 66, spd: 66, spe: 129},
 		abilities: {0: "Slush Rush", H: "Speed Boost"},
 		weightkg: 62,
+		prevo: "Arctire",
+		evoType: "levelExtra",
+		evoCondition: "with 100+ Speed EVs",
 	},
 	psyclops: {
 		num: 499.5,
@@ -3453,6 +3826,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 93, atk: 98, def: 68, spa: 122, spd: 76, spe: 68},
 		abilities: {0: "No Guard", 1: "Berserk", H: "Anger Point"},
 		weightkg: 150,
+		prevo: "Psyclops",
+		evoLevel: 42,
 	},
 	bagon: {
 		inherit: true,
@@ -3479,6 +3854,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 51, atk: 114, def: 36, spa: 120, spd: 62, spe: 136},
 		abilities: {0: "Levitate", 1: "Aftermath", H: "Anticipation"},
 		weightkg: 1,
+		prevo: "Ballistyke",
+		evoType: "levelMove",
+		evoMove: "Light Up",
 	},
 	spheal: {
 		inherit: true,
@@ -3520,6 +3898,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 73, atk: 66, def: 110, spa: 123, spd: 71, spe: 97},
 		abilities: {0: "Liquid Voice", H: "Swift Swim"},
 		weightkg: 168,
+		prevo: "Whirlpoon",
+		evoLevel: 46,
 	},
 	dhelmise: {
 		inherit: true,
@@ -3540,6 +3920,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 45, def: 96, spa: 106, spd: 136, spe: 25},
 		abilities: {0: "Storm Drain", 1: "Lightning Rod", H: "Dazzling"},
 		weightkg: 27,
+		prevo: "Bristletoe",
+		evoType: "useItem",
+		evoItem: "Thunder Stone",
 	},
 	clamperl: {
 		inherit: true,
@@ -3553,6 +3936,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 104, def: 105, spa: 94, spd: 75, spe: 52},
 		abilities: {0: "Strong Jaw", H: "Multiscale"},
 		weightkg: 35,
+		prevo: "Clamperl",
+		evoType: "useItem",
+		evoItem: "Deep Sea Tooth",
 	},
 	gorebyssnovrai: {
 		num: 368,
@@ -3563,6 +3949,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 55, atk: 84, def: 105, spa: 114, spd: 75, spe: 52},
 		abilities: {0: "Poison Heal", H: "Magic Bounce"},
 		weightkg: 27,
+		prevo: "Clamperl",
+		evoType: "useItem",
+		evoItem: "Deep Sea Scale",
 	},
 	bergmite: {
 		inherit: true,
@@ -3595,6 +3984,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 70, atk: 85, def: 85, spa: 75, spd: 75, spe: 25},
 		abilities: {0: "Adaptability", 1: "Ice Body", H: "Filthy Surge"},
 		weightkg: 16,
+		prevo: "Germelt",
+		evoLevel: 35,
 		evos: ["Brumalaise"],
 	},
 	brumalaise: {
@@ -3604,6 +3995,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 105, def: 105, spa: 95, spd: 95, spe: 40},
 		abilities: {0: "Adaptability", 1: "Ice Body", H: "Filthy Surge"},
 		weightkg: 330,
+		prevo: "Contagice",
+		evoType: "useItem",
+		evoItem: "Ice Stone",
 	},
 	duraludon: {
 		inherit: true,
@@ -3615,7 +4009,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Normal", "Rock"],
 		gender: "N",
 		baseStats: {hp: 120, atk: 72, def: 84, spa: 96, spd: 108, spe: 72},
-		abilities: {0: "Clairvoyant", H: "Solar Power"},
+		abilities: {0: "Clairvoyance", H: "Solar Power"},
 		weightkg: 380,
 	},
 	larvitar: {
@@ -3658,6 +4052,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 85, atk: 135, def: 105, spa: 60, spd: 65, spe: 100},
 		abilities: {0: "Rattled", H: "Unnerve"},
 		weightkg: 53.2,
+		prevo: "Cadavillar",
+		evoLevel: 49,
 	},
 	xlixir: {
 		num: 537.5,

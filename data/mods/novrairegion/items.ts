@@ -118,7 +118,8 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Fistiscuff' || pokemon.baseSpecies.baseSpecies === 'Elegent') {
+			if (pokemon.baseSpecies.baseSpecies === 'Fistiscuff' || pokemon.baseSpecies.baseSpecies === 'Elegent' ||
+				pokemon.baseSpecies.baseSpecies === 'fistiscuff' || pokemon.baseSpecies.baseSpecies === 'elegent') {
 				return this.chainModify(2);
 			}
 		},
@@ -169,7 +170,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		onModifySpePriority: 2,
 		onModifySpe(spe, pokemon) {
-			if (pokemon.baseSpecies.name === 'Morostache') {
+			if (pokemon.baseSpecies.name === 'Morostache' || pokemon.baseSpecies.name === 'morostache') {
 				return this.chainModify(2);
 			}
 		},
@@ -184,7 +185,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		onModifyDefPriority: 1,
 		onModifyDef(def, pokemon) {
-			if (pokemon.baseSpecies.name === 'Morostache') {
+			if (pokemon.baseSpecies.name === 'Morostache' || pokemon.baseSpecies.name === 'morostache') {
 				return this.chainModify(2);
 			}
 		},
@@ -199,12 +200,81 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
-			if (user.baseSpecies.num === 201 && (move.type !== 'Normal')) {
+			if (user.baseSpecies.num === 235 && (move.type !== 'Normal')) {
 				return this.chainModify(1.5);
 			}
 		},
 		itemUser: ["Smeargle"],
 		num: -1011,
 		gen: 9,
+	},
+	weathervane: {
+		name: "Weather Vane",
+		fling: {
+			basePower: 30,
+		},
+		onAfterMoveSecondarySelf(target, source, move) {
+			if (move.id === 'sunnyday' || move.id === 'raindance' || move.id === 'sandstorm' || move.id === 'snowscape') {
+				target.useItem();
+			}
+		},
+		boosts: {
+			spe: 1,
+			accuracy: 1,
+		},
+		num: -1012,
+		gen: 9,
+		desc: "Raises holder's Speed and accuracy after using a weather-setting move. Single use.",
+	},
+	punchingglove: {
+		inherit: true,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Punching Glove boost');
+				return this.chainModify(1.2);
+			}
+		},
+	},
+	razorclaw: {
+		name: "Razor Claw",
+		spritenum: 382,
+		fling: {
+			basePower: 80,
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slicing']) {
+				this.debug('Razor Claw boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			if (move.flags['slicing']) delete move.flags['contact'];
+		},
+		num: 326,
+		gen: 4,
+		desc: "Holder's slicing moves are boosted by 20% and don't make contact. Evolves Sneasel into Weavile when held and leveled up during the night.",
+		shortDesc: "Holder's slicing moves are boosted by 20% and don't make contact.",
+	},
+	razorfang: {
+		name: "Razor Fang",
+		spritenum: 383,
+		fling: {
+			basePower: 30,
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bite']) {
+				this.debug('Razor Fang boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			if (move.flags['bite']) delete move.flags['contact'];
+		},
+		num: 327,
+		gen: 4,
+		desc: "Holder's biting moves are boosted by 20% and don't make contact. Evolves Gligar into Gliscor when held and leveled up during the night.",
+		shortDesc: "Holder's biting moves are boosted by 20% and don't make contact.",
 	},
 };

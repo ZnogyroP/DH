@@ -35,7 +35,7 @@ export const Formats: FormatList = [
 			'Rotom-Fan', 'Rotom-Mow', 'Encryptid', 'Rhyhorn', 'Rhydon', 'Rhyperior', 'Scraggy', 'Scrafty', 'Upchick', 'Carriannon', 'Rellor', 'Rabsca', 'Hatenna-Novrai', 'Hattrem-Novrai',
 			'Hatterene-Novrai', 'Impidimp-Novrai', 'Morgrem-Novrai', 'Grimmsnarl-Novrai', 'Darumaka', 'Darmanitan', 'Darmanitan-Zen', 'Grimer-Novrai', 'Muk-Novrai', 'Bramblin', 'Brambleghast',
 			'Helioptile', 'Heliolisk', 'Kuloff', 'Kuldown', 'Ferroseed', 'Ferrothorn', 'Cacnea', 'Cacturne', 'Ampaconda', 'Spiraclean', 'Orthworm', 'Ambug', 'Carambug', 'Spinostern',
-			'Overroard', 'Cranidos-Novrai', 'Rampardos-Novrai', 'Omanyte-Novrai', 'Omastar-Novrai', 'Cambyro', 'Palaeodox', 'Granvas', 'Mezosaic', 'Aerodactyl', 'Fosteraptor', 'Sizzlipede',
+			'Overroard', 'Cranidos-Novrai', 'Rampardos-Novrai', 'Omanyte-Novrai', 'Omastar-Novrai', 'Cambryo', 'Palaeodox', 'Granvas', 'Mezosaic', 'Aerodactyl', 'Fosteraptor', 'Sizzlipede',
 			'Centiskorch', 'Itcheep', 'Poxadoodle', 'Minsect', 'Crawlycane', 'Vanillite-Novrai', 'Vanillish-Novrai', 'Vanilluxe-Novrai', 'Shivrr', 'Icecreep', 'Quaintbrush', 'Blendulum',
 			'Thinkblot', 'Rorschade', 'Scholarva', 'Intellibee', 'Unown', 'Unown-Omega', 'Kreakup', 'Krackpot', 'Haloe', 'Aloverity', 'Diretom', 'Eruptide', 'Plectric', 'Sharcastric',
 			'Roenin', 'Salmurai', 'Harminth', 'Murkrow', 'Honchkrow', 'Croagunk', 'Toxicroak', 'Dreepy', 'Drakloak', 'Dragapult', 'Sweeptite', 'Dustrega', 'Librareek', 'Calligrave',
